@@ -1,0 +1,16 @@
+/* 1. Set the overall page background */
+body {
+  background-color: #FAFAFA; /* Soft White */
+  color: #333333; /* Use a dark text color for high contrast */
+  font-family: Arial, sans-serif; /* Recommended: Set a clean font */
+  margin: 0; /* Remove default browser spacing */
+  padding: 0;
+}
+
+/* 2. Style your main application container (if applicable) */
+/* If your AI chat component is within a specific div, you can target it: */
+#ai-chat-app-container {
+  background-color: #FFFFFF; /* You can make the chat box pure white to stand out */
+  border-radius: 8px; /* Optional: adds a modern, subtle curve */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05); /* Optional: adds subtle depth */
+}
