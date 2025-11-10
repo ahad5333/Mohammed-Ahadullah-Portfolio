@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { HERO_CONTENT, SOCIAL_LINKS, NAV_LINKS } from '../constants';
 
@@ -13,7 +14,7 @@ const Hero: React.FC = () => {
   };
 
   return (
-    <section id="hero" className="min-h-[calc(100vh-4rem)] flex flex-col justify-center py-20 text-center">
+    <section id="hero" className="relative overflow-hidden min-h-[calc(100vh-4rem)] flex flex-col justify-center py-20 text-center">
       <div className="max-w-4xl mx-auto">
         <h1 className="text-5xl md:text-7xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-slate-800 to-slate-500 dark:from-slate-50 dark:to-slate-400 py-2 animate-fade-in-up"
          style={{ animationDelay: '0.1s', animationFillMode: 'backwards' }}>

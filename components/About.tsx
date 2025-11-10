@@ -1,4 +1,5 @@
-import React from 'react';
+
+import React, { useState, useEffect, useRef } from 'react';
 import { ABOUT_CONTENT } from '../constants';
 
 // Fix: Make children prop optional to work around a potential type-checking issue.
@@ -7,8 +8,40 @@ const SectionTitle = ({ children }: { children?: React.ReactNode }) => (
 );
 
 const About: React.FC = () => {
+  const [isVisible, setIsVisible] = useState(false);
+  const sectionRef = useRef<HTMLElement>(null);
+
+  useEffect(() => {
+      const observer = new IntersectionObserver(
+          ([entry]) => {
+              if (entry.isIntersecting) {
+                  setIsVisible(true);
+                  observer.unobserve(entry.target);
+              }
+          },
+          {
+              threshold: 0.1,
+          }
+      );
+
+      const currentRef = sectionRef.current;
+      if (currentRef) {
+          observer.observe(currentRef);
+      }
+
+      return () => {
+          if (currentRef) {
+              observer.unobserve(currentRef);
+          }
+      };
+  }, []);
+
   return (
-    <section id="about" className="py-20 md:py-32">
+    <section 
+        ref={sectionRef}
+        id="about" 
+        className={`py-20 md:py-32 ${isVisible ? 'animate-fade-in-up' : 'opacity-0'}`}
+    >
        <SectionTitle>About Me</SectionTitle>
       <div className="flex flex-col md:flex-row items-center gap-12">
         <div className="md:w-1/3 flex justify-center">

@@ -1,16 +1,42 @@
-/* 1. Set the overall page background */
-body {
-  background-color: #FAFAFA; /* Soft White */
-  color: #333333; /* Use a dark text color for high contrast */
-  font-family: Arial, sans-serif; /* Recommended: Set a clean font */
-  margin: 0; /* Remove default browser spacing */
-  padding: 0;
+/* AESTHETICS & ANIMATIONS */
+
+/* Keyframe for the moving background effect */
+@keyframes move-background {
+  from {
+    transform: translate(0, 0);
+  }
+  to {
+    transform: translate(50px, 50px);
+  }
 }
 
-/* 2. Style your main application container (if applicable) */
-/* If your AI chat component is within a specific div, you can target it: */
-#ai-chat-app-container {
-  background-color: #FFFFFF; /* You can make the chat box pure white to stand out */
-  border-radius: 8px; /* Optional: adds a modern, subtle curve */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05); /* Optional: adds subtle depth */
+/* 
+ * Applies a subtle, animated dot-grid background to the hero section.
+ * This pseudo-element creates a techy, dynamic feel without adding clutter.
+*/
+#hero::before {
+  content: '';
+  position: absolute;
+  top: -50px;
+  left: -50px;
+  width: calc(100% + 100px);
+  height: calc(100% + 100px);
+  /* Light mode dot color */
+  background-image: radial-gradient(circle at 1px 1px, #d1d5db 1px, transparent 0); /* gray-300 */
+  background-size: 50px 50px;
+  animation: move-background 20s linear infinite;
+  opacity: 0.5;
+  z-index: 0;
+}
+
+/* Dark mode version of the dot-grid background */
+.dark #hero::before {
+  background-image: radial-gradient(circle at 1px 1px, #4b5563 1px, transparent 0); /* gray-600 */
+  opacity: 0.3;
+}
+
+/* Ensures the hero content stays above the animated background */
+#hero > * {
+    position: relative;
+    z-index: 1;
 }

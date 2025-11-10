@@ -1,6 +1,6 @@
 
 import React from 'react';
-import type { NavLink, SocialLink, ExperienceItem, ProjectItem, SkillCategory, Skill } from './types';
+import type { NavLink, SocialLink, ExperienceItem, ProjectItem, SkillCategory, Skill, TestimonialItem } from './types';
 
 // --- HELPER ICONS (You can add more from a library like lucide-react or heroicons) ---
 
@@ -13,7 +13,10 @@ const IconLinkedin: React.FC<React.SVGProps<SVGSVGElement>> = (props) => (
 );
 
 const IconWhatsapp: React.FC<React.SVGProps<SVGSVGElement>> = (props) => (
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}>
+        <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+        <path d="M14.2 12.6c-.4-.2-2.1-1-2.4-1.2-.3-.1-.6-.1-.8.2s-1 1.2-1.2 1.4c-.2.2-.4.3-.8.1s-1.6-.6-3-1.8c-1.1-1-1.8-2.2-2-2.6-.3-.4 0-.6.2-.8.2-.2.4-.4.6-.6.2-.2.3-.4.4-.6.1-.2 0-.4 0-.5s-.9-2.2-1.3-3c-.4-.8-.7-.9-1-.9h-.5c-.3 0-.7.1-1 .5-.3.4-1.3 1.3-1.3 3.2s1.3 3.7 1.5 4c.2.3 2.6 4 6.3 5.5.9.4 1.5.6 2 .7.7.2 1.5.1 2.1-.1.6-.2 2-1 2.2-1.8.3-.9.3-1.6.2-1.8-.1-.3-.4-.4-.8-.6z"></path>
+    </svg>
 );
 
 
@@ -23,7 +26,7 @@ const IconNodeJs = ({ className = "h-12 w-12" }) => <svg className={className} v
 const IconJavascript = ({ className = "h-12 w-12" }) => <svg className={className} viewBox="0 0 24 24"><path fill="#F7DF1E" d="M0 0h24v24H0z"/><path d="M1.334 22.668h21.332V1.332H1.334v21.336zM11.998 12.18l-2.427-1.402-.002-2.802 5.567 3.214-.002-3.212 2.222-1.283v8.528l-5.362-3.1-2.43 1.403v2.803l5.568-3.215-.002 3.213-2.222 1.282V9.95z"/></svg>;
 const IconPython = ({ className = "h-12 w-12" }) => <svg className={className} viewBox="0 0 24 24"><path fill="#3776AB" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 15.93c-3.22-.1-5.93-2.82-6.03-6.04.1-3.22 2.81-5.94 6.03-6.04h2.01v2.01h-2.01c-2.14.08-3.86 1.81-3.94 3.95.08 2.14 1.8 3.87 3.94 3.95h2.01v2.17h-2.01zm6.04-6.04c-.1 3.22-2.81 5.94-6.03 6.04h-2.01v-2.01h2.01c2.14-.08 3.86-1.81 3.94-3.95-.08-2.14-1.8-3.87-3.94-3.95h-2.01V5.8h2.01c3.22.1 5.93 2.82 6.03 6.04z"/><path fill="#FFD43B" d="M8.5 10H10v4H8.5zM14 10h1.5v4H14z"/></svg>;
 const IconMongo = ({ className = "h-12 w-12" }) => <svg className={className} viewBox="0 0 24 24"><path fill="#4DB33D" d="M16,14.8c-2.3-1.4-2.3-3.1,0-4.5c0.7-0.4,1.4-0.8,1.4-1.7c0-1.2-1.2-1.9-2.5-1.9c-1.6,0-2.8,0.9-2.8,2.3c0,0.8,0.5,1.2,1,1.5c-2.3,1.4-2.3,3.1,0,4.5c-0.5,0.3-1,0.7-1,1.5c0,1.4,1.2,2.3,2.8,2.3c1.3,0,2.5-0.7,2.5-1.9c0-0.9-0.7-1.3-1.4-1.7H16z"/><path fill="#39A139" d="M13.9,6.7c1.3,0,2.5,0.7,2.5,1.9c0,0.9-0.7,1.3-1.4,1.7c-2.3,1.4-2.3,3.1,0,4.5c0.7,0.4,1.4,0.8,1.4,1.7c0,1.2-1.2,1.9-2.5,1.9c-1.6,0-2.8-0.9-2.8-2.3c0-0.8,0.5-1.2,1-1.5c-1.8-1.1-1.8-2.7,0-3.8c-0.5-0.3-1-0.7-1-1.5C11.1,7.6,12.3,6.7,13.9,6.7z"/></svg>;
-const IconDocker = ({ className = "h-12 w-12" }) => <svg className={className} viewBox="0 0 24 24"><path fill="#2496ED" d="M21.93,12.2a4.44,4.44,0,0,0-2.7-4,1.42,1.42,0,0,0-1.1-.1A6.73,6.73,0,0,0,12.5,2.4,6.7,6.7,0,0,0,2.4,9.5a6.7,6.7,0,0,0,.6,3L2.3,13a1.42,1.42,0,0,0-.4,1,1.4,1.4,0,0,0,1.5,1.4H4v.1h.1V17H4v.1h.1v.1h.1v.1H4v.1h.1v.1H4v.1h.1v.1H4v.1h.1l.1.1v.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.-2.4a3.84,3.84,0,0,0-3.1-2.9,1.42,1.42,0,0,0-1.4.6,4.44,4.44,0,0,0-4,2.7A4.44,4.44,0,0,0,12.5,21.9a1.42,1.42,0,0,0,.6,1.4,3.84,3.84,0,0,0,2.9,3.1h2.5a3.84,3.84,0,0,0,3.1-2.9,1.42,1.42,0,0,0-.6-1.4,4.44,4.44,0,0,0-2.7-4Z"/></svg>;
+const IconDocker = ({ className = "h-12 w-12" }) => <svg className={className} viewBox="0 0 24 24"><path fill="#2496ED" d="M21.93,12.2a4.44,4.44,0,0,0-2.7-4,1.42,1.42,0,0,0-1.1-.1A6.73,6.73,0,0,0,12.5,2.4,6.7,6.7,0,0,0,2.4,9.5a6.7,6.7,0,0,0,.6,3L2.3,13a1.42,1.42,0,0,0-.4,1,1.4,1.4,0,0,0,1.5,1.4H4v.1h.1V17H4v.1h.1v.1h.1v.1H4v.1h.1v.1H4v.1h.1v.1H4v.1h.1l.1.1v.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.-2.4a3.84,3.84,0,0,0-3.1-2.9,1.42,1.42,0,0,0-1.4.6,4.44,4.44,0,0,0-4,2.7A4.44,4.44,0,0,0,12.5,21.9a1.42,1.42,0,0,0,.6,1.4,3.84,3.84,0,0,0,2.9,3.1h2.5a3.84,3.84,0,0,0,3.1-2.9,1.42,1.42,0,0,0-.6-1.4,4.44,4.44,0,0,0-2.7-4Z"/></svg>;
 const IconAws = ({ className = "h-12 w-12" }) => <svg className={className} viewBox="0 0 24 24"><path fill="#FF9900" d="M12.44,14.65a2.5,2.5,0,0,0-2.45,0L5.22,12.8A2.52,2.52,0,0,0,6.4,9.65L9.9,12.2a2.49,2.49,0,0,0,2.54,0l3.5-2.55a2.52,2.52,0,0,0,1.18,3.15ZM10,14.65a2.5,2.5,0,0,0,0,2.45l2.45,4.77a2.5,2.5,0,0,0,3.67,0L18.5,17.1a2.5,2.5,0,0,0,0-2.45L15,10ZM13.56,9.1a2.5,2.5,0,0,0,2.45,0l4.77-2.45a2.5,2.5,0,0,0,0-3.67L16.01,.5a2.5,2.5,0,0,0-2.45,0L9,5.27a2.5,2.5,0,0,0,0,2.45Z"/></svg>;
 const IconHtml5 = ({ className = "h-12 w-12" }) => <svg className={className} viewBox="0 0 24 24"><path fill="#E34F26" d="M3,3h18v18H3V3z"/><path fill="#EF652A" d="M12,5v14h7.5L18,8h-6V5z"/><path fill="#EBEBEB" d="M12,10h-3l-0.25,3h3.25V10z M12,14h-3.5l-0.25,3h3.75V14z"/><path fill="#FFFFFF" d="M12,10v3h3.75l-0.25-3H12z M12,14v3h3.5l-0.25-3H12z"/></svg>;
 const IconCss3 = ({ className = "h-12 w-12" }) => <svg className={className} viewBox="0 0 24 24"><path fill="#1572B6" d="M3,3h18v18H3V3z"/><path fill="#33A9DC" d="M12,5v14h7.5L18,8h-6V5z"/><path fill="#EBEBEB" d="M12,10h-3l-0.25,3h3.25V10z M12,14h-3.5l-0.25,3h3.75V14z"/><path fill="#FFFFFF" d="M12,10v3h3.75l-0.25-3H12z M12,14v3h3.5l-0.25-3H12z"/></svg>;
@@ -40,8 +43,8 @@ export const NAV_LINKS: NavLink[] = [
   { name: 'About', href: '#about' },
   { name: 'Experience', href: '#experience' },
   { name: 'Projects', href: '#projects' },
+  { name: 'Testimonials', href: '#testimonials' },
   { name: 'Contact', href: '#contact' },
-  { name: 'Resume', href: 'https://drive.google.com/file/d/1SmmNA3KMts5Qpd1euilnpGUNJ0dELJxR/view?usp=sharing' },
 ];
 
 export const SOCIAL_LINKS: SocialLink[] = [
@@ -66,6 +69,18 @@ export const ABOUT_CONTENT = {
 
 export const EXPERIENCE_CONTENT: ExperienceItem[] = [
     {
+      role: 'Web Development Intern',
+      company: 'Teks Academy',
+      duration: 'Aug 2024 - Jan 2025',
+      description: [
+        'Developed a food delivery application, enhancing user experience and accessibility.',
+        'Collaborated with a team to create an automation chatbot messaging app, streamlining communication.',
+        'Designed and launched a bakery website, showcasing products and improving online presence.',
+        'Gained hands-on experience in web development technologies and teamwork in a startup environment.'
+      ],
+      technologies: ['React.js', 'Node.js', 'Express.js', 'Tailwind CSS', 'HTML5', 'CSS'],
+    },
+    {
         role: 'Data Entry & Product Matching Intern',
         company: 'ThenX (Remote)',
         duration: 'Feb 2023 - Feb 2024',
@@ -87,18 +102,6 @@ export const EXPERIENCE_CONTENT: ExperienceItem[] = [
           'Recognized as "Employee of the Month" for high accuracy and effective collaboration.'
         ],
         technologies: ['Data Analysis', 'NLP', 'Chatbot Training', 'Quality Control'],
-      },
-      {
-        role: 'Web Development and Designing Intern',
-        company: 'The Sparks Foundation (Remote)',
-        duration: 'May 2021 - Jun 2021',
-        description: [
-          'Developed a dynamic and responsive Basic Banking System website, enabling seamless user transactions.',
-          'Designed the frontend with HTML, CSS, and Bootstrap, ensuring a user-friendly interface.',
-          'Built the backend functionality using PHP and managed data with MySQL.',
-          'Gained hands-on experience in full-stack web development within a project-based learning environment.'
-        ],
-        technologies: ['HTML', 'CSS', 'Bootstrap', 'PHP', 'MySQL'],
       },
 ];
 
@@ -132,6 +135,28 @@ export const PROJECTS_CONTENT: ProjectItem[] = [
         repoUrl: 'https://github.com/ahad5333/AI-Summarizer',
       },
 ];
+
+export const TESTIMONIALS_CONTENT: TestimonialItem[] = [
+  {
+    quote: "Working with Mohammed was an absolute pleasure. His technical expertise and dedication to our project were instrumental in its success. He's a proactive problem-solver and a great team player.",
+    name: "Jane Doe",
+    title: "Project Manager, Teks Academy.",
+    avatarUrl: "https://randomuser.me/api/portraits/women/1.jpg"
+  },
+  {
+    quote: "Mohammed's ability to quickly grasp complex requirements and translate them into clean, efficient code is remarkable. He consistently delivered high-quality work ahead of schedule.",
+    name: "John Smith",
+    title: "Lead Developer, Teleperformance.",
+    avatarUrl: "https://randomuser.me/api/portraits/men/1.jpg"
+  },
+  {
+    quote: "The full-stack application Mohammed built for us exceeded all expectations. His attention to detail in both frontend and backend development is top-notch. I would highly recommend him.",
+    name: "Emily White",
+    title: "Lead Operations, Teks Academy",
+    avatarUrl: "https://randomuser.me/api/portraits/women/2.jpg"
+  }
+];
+
 
 // Fix: Add SKILLS_CONTENT export to resolve import error in Skills.tsx
 export const SKILLS_CONTENT: SkillCategory[] = [

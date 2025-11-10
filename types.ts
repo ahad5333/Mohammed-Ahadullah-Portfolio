@@ -38,3 +38,10 @@ export interface SkillCategory {
   name: string;
   skills: Skill[];
 }
+
+export interface TestimonialItem {
+  quote: string;
+  name: string;
+  title: string;
+  avatarUrl?: string;
+}

@@ -8,6 +8,7 @@ import Projects from './components/Projects';
 import Skills from './components/Skills';
 import Contact from './components/Contact';
 import LockScreen from './components/LockScreen';
+import Testimonials from './components/Testimonials';
 
 const App: React.FC = () => {
   const [isUnlocked, setIsUnlocked] = useState(false);
@@ -50,6 +51,7 @@ const App: React.FC = () => {
         <About />
         <Experience />
         <Projects />
+        <Testimonials />
         <Skills />
         <Contact />
       </main>
