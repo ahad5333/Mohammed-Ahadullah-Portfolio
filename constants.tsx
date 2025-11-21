@@ -150,19 +150,16 @@ export const TESTIMONIALS_CONTENT: TestimonialItem[] = [
   quote: "Working with Mohammed was an absolute pleasure. His technical expertise and dedication to our project were instrumental in its success. He's a proactive problem-solver and a great team player.",
   name: "Aarti Sharma",
   title: "Project Manager, Teks Academy.",
-  avatarUrl: "/avatar-placeholder.png"
 },
 {
   quote: "Mohammed's ability to quickly grasp complex requirements and translate them into clean, efficient code is remarkable. He consistently delivered high-quality work ahead of schedule.",
   name: "Rohan Mehta",
   title: "Lead Developer, Teleperformance.",
-  avatarUrl: "/avatar-placeholder.png"
 },
 {
   quote: "The full-stack application Mohammed built for us exceeded all expectations. His attention to detail in both frontend and backend development is top-notch. I would highly recommend him.",
   name: "Neha Reddy",
   title: "Lead Operations, Teks Academy",
-  avatarUrl: "/avatar-placeholder.png"
 }
 
 
