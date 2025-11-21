@@ -1,42 +1,193 @@
-/* AESTHETICS & ANIMATIONS */
+/* =========================================
+   GLOBAL THEME UPGRADE FOR PORTFOLIO
+   Clean, modern, smooth aesthetic
+========================================= */
 
-/* Keyframe for the moving background effect */
-@keyframes move-background {
-  from {
-    transform: translate(0, 0);
-  }
-  to {
-    transform: translate(50px, 50px);
-  }
+/* Root color system */
+:root {
+  --bg: #ffffff;
+  --bg-soft: #f7f9fc;
+  --text: #111827;
+  --text-soft: #374151;
+  --accent: #0d6bf7;
+  --accent-soft: #76a9ff;
+  --card-bg: #ffffff;
+  --border: #e5e7eb;
+  --radius: 14px;
+  --shadow: 0 6px 20px rgba(0,0,0,0.08);
 }
 
-/* 
- * Applies a subtle, animated dot-grid background to the hero section.
- * This pseudo-element creates a techy, dynamic feel without adding clutter.
-*/
-#hero::before {
-  content: '';
-  position: absolute;
-  top: -50px;
-  left: -50px;
-  width: calc(100% + 100px);
-  height: calc(100% + 100px);
-  /* Light mode dot color */
-  background-image: radial-gradient(circle at 1px 1px, #d1d5db 1px, transparent 0); /* gray-300 */
-  background-size: 50px 50px;
-  animation: move-background 20s linear infinite;
-  opacity: 0.5;
-  z-index: 0;
+/* Dark theme variables */
+.dark {
+  --bg: #0d1117;
+  --bg-soft: #161b22;
+  --text: #e5e7eb;
+  --text-soft: #9ca3af;
+  --accent: #3b82f6;
+  --accent-soft: #60a5fa;
+  --card-bg: #1a1f27;
+  --border: #2b313b;
+  --shadow: 0 6px 16px rgba(0,0,0,0.3);
 }
 
-/* Dark mode version of the dot-grid background */
-.dark #hero::before {
-  background-image: radial-gradient(circle at 1px 1px, #4b5563 1px, transparent 0); /* gray-600 */
-  opacity: 0.3;
+/* Global reset */
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  transition: background 0.3s ease, color 0.3s ease;
 }
 
-/* Ensures the hero content stays above the animated background */
-#hero > * {
-    position: relative;
-    z-index: 1;
+/* Smooth transitions for all elements */
+* {
+  transition: 0.25s ease;
+}
+
+/* =========================================
+   HEADINGS
+========================================= */
+h1, h2, h3, h4 {
+  color: var(--text);
+  letter-spacing: -0.5px;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 2.2rem;
+}
+h3 {
+  font-size: 1.6rem;
+}
+
+/* =========================================
+   SECTIONS
+========================================= */
+section {
+  padding: 80px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+/* =========================================
+   CARDS (Projects, Testimonials, Skills, etc.)
+========================================= */
+.card {
+  background: var(--card-bg);
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  padding: 24px;
+  box-shadow: var(--shadow);
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+/* =========================================
+   BUTTONS
+========================================= */
+button,
+.btn {
+  padding: 12px 22px;
+  background: var(--accent);
+  color: white;
+  border-radius: var(--radius);
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(13,107,247,0.25);
+}
+
+button:hover,
+.btn:hover {
+  background: var(--accent-soft);
+  transform: translateY(-2px);
+}
+
+/* Ghost / secondary button */
+.btn-ghost {
+  background: transparent;
+  color: var(--text);
+  border: 2px solid var(--accent);
+}
+
+.btn-ghost:hover {
+  background: var(--accent);
+  color: white;
+}
+
+/* =========================================
+   LINKS
+========================================= */
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--accent-soft);
+}
+
+/* =========================================
+   INPUTS / FORMS
+========================================= */
+input, textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  background: var(--card-bg);
+  color: var(--text);
+}
+
+input:focus, textarea:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgba(13, 107, 247, 0.15);
+}
+
+/* =========================================
+   NAVBAR
+========================================= */
+nav {
+  background: var(--bg-soft);
+  border-bottom: 1px solid var(--border);
+  padding: 16px 0;
+  position: sticky;
+  top: 0;
+  backdrop-filter: blur(10px);
+}
+
+nav a {
+  margin-right: 20px;
+  font-weight: 500;
+  color: var(--text-soft);
+}
+
+nav a:hover {
+  color: var(--accent);
+}
+
+/* =========================================
+   FOOTER
+========================================= */
+footer {
+  background: var(--bg-soft);
+  padding: 40px;
+  text-align: center;
+  color: var(--text-soft);
+  border-top: 1px solid var(--border);
+}
+
+/* =========================================
+   SPECIAL EFFECT: subtle gradient glow
+========================================= */
+.glow {
+  background: linear-gradient(135deg, var(--accent), var(--accent-soft));
+  padding: 4px;
+  border-radius: var(--radius);
 }

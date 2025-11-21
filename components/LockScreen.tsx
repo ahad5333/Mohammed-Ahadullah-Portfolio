@@ -1,20 +1,17 @@
 
 import React from 'react';
-import { HERO_CONTENT } from '../constants';
+import { HERO_CONTENT, PROFILE_IMAGE_URL } from '../constants';
 
 interface LockScreenProps {
   onUnlock: () => void;
 }
 
 const LockScreen: React.FC<LockScreenProps> = ({ onUnlock }) => {
-  // Use the professional photo from GitHub
-  const avatarUrl = "https://github.com/ahad5333.png";
-
   return (
     <div className="flex flex-col items-center justify-center min-h-screen text-center p-4 animate-fade-in">
       <div className="group">
         <img 
-          src={avatarUrl} 
+          src={PROFILE_IMAGE_URL}
           alt="Profile"
           onClick={onUnlock}
           className="cursor-pointer rounded-full w-48 h-48 md:w-64 md:h-64 object-cover border-4 border-accent shadow-lg transition-all duration-300 animate-subtle-pulse group-hover:animate-none group-hover:scale-105 group-hover:shadow-accent/40 dark:group-hover:shadow-dark-accent/40"

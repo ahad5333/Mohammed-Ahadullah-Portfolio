@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { NAV_LINKS, HERO_CONTENT, SOCIAL_LINKS } from '../constants';
 
@@ -35,24 +36,51 @@ const Header: React.FC<HeaderProps> = ({ theme, toggleTheme }) => {
     setIsOpen(!isOpen);
   };
 
+  const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+    e.preventDefault();
+    
+    // Handle external links
+    if (href.startsWith('http')) {
+        window.open(href, '_blank', 'noopener,noreferrer');
+        setIsOpen(false);
+        return;
+    }
+
+    const targetId = href.replace('#', '');
+    const element = document.getElementById(targetId);
+    
+    if (element) {
+        const headerOffset = 80; // Header height + padding
+        const elementPosition = element.getBoundingClientRect().top;
+        const offsetPosition = elementPosition + window.scrollY - headerOffset;
+
+        window.scrollTo({
+            top: offsetPosition,
+            behavior: 'smooth'
+        });
+    }
+    setIsOpen(false);
+  };
+
   return (
     <header className="sticky top-0 z-50 bg-slate-50/80 dark:bg-slate-900/80 backdrop-blur-sm border-b border-slate-200 dark:border-slate-800">
       <div className="container mx-auto px-6 md:px-12">
         <div className="flex items-center justify-between h-16">
-          <a href="#" className="text-2xl font-bold text-slate-800 dark:text-slate-50 hover:text-accent dark:hover:text-dark-accent transition-colors">
+          <a href="#" onClick={(e) => handleNavClick(e, '#hero')} className="flex-shrink-0 text-2xl font-bold text-slate-800 dark:text-slate-50 hover:text-accent dark:hover:text-dark-accent transition-colors">
             {HERO_CONTENT.name.split(' ')[0]}
           </a>
           <div className="flex items-center gap-4 md:gap-6">
-            <nav className="hidden md:flex items-center space-x-8">
+            <nav className="hidden lg:flex items-center space-x-6 xl:space-x-8">
               {NAV_LINKS.map((link) => {
                 const isExternal = link.href.startsWith('http');
                 return (
                   <a 
                     key={link.name} 
                     href={link.href} 
+                    onClick={(e) => handleNavClick(e, link.href)}
                     target={isExternal ? '_blank' : undefined}
                     rel={isExternal ? 'noopener noreferrer' : undefined}
-                    className="text-slate-500 dark:text-slate-400 hover:text-slate-800 dark:hover:text-slate-50 transition-colors"
+                    className="text-slate-500 dark:text-slate-400 hover:text-slate-800 dark:hover:text-slate-50 transition-colors cursor-pointer font-medium"
                   >
                     {link.name}
                   </a>
@@ -74,7 +102,7 @@ const Header: React.FC<HeaderProps> = ({ theme, toggleTheme }) => {
             >
               {theme === 'light' ? <MoonIcon className="h-6 w-6" /> : <SunIcon className="h-6 w-6" />}
             </button>
-            <div className="md:hidden">
+            <div className="lg:hidden">
               <button onClick={toggleMenu} className="text-slate-800 dark:text-slate-50 focus:outline-none">
                 {isOpen ? <XIcon className="h-6 w-6" /> : <MenuIcon className="h-6 w-6" />}
               </button>
@@ -83,18 +111,18 @@ const Header: React.FC<HeaderProps> = ({ theme, toggleTheme }) => {
         </div>
       </div>
       {isOpen && (
-        <div className="md:hidden bg-slate-50/95 dark:bg-slate-900/95 backdrop-blur-sm">
-          <nav className="flex flex-col items-center space-y-4 py-4">
+        <div className="lg:hidden bg-slate-50/95 dark:bg-slate-900/95 backdrop-blur-sm h-screen">
+          <nav className="flex flex-col items-center space-y-8 py-12">
             {NAV_LINKS.map((link) => {
               const isExternal = link.href.startsWith('http');
               return (
                 <a 
                   key={link.name} 
                   href={link.href} 
-                  onClick={toggleMenu}
+                  onClick={(e) => handleNavClick(e, link.href)}
                   target={isExternal ? '_blank' : undefined}
                   rel={isExternal ? 'noopener noreferrer' : undefined}
-                  className="text-slate-500 dark:text-slate-400 hover:text-slate-800 dark:hover:text-slate-50 transition-colors text-lg"
+                  className="text-slate-500 dark:text-slate-400 hover:text-slate-800 dark:hover:text-slate-50 transition-colors text-xl font-medium"
                 >
                   {link.name}
                 </a>

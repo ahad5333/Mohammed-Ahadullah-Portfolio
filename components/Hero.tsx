@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { HERO_CONTENT, SOCIAL_LINKS, NAV_LINKS } from '../constants';
+import { HERO_CONTENT, SOCIAL_LINKS, NAV_LINKS, PROFILE_IMAGE_URL } from '../constants';
 
 const Hero: React.FC = () => {
   const resumeLink = NAV_LINKS.find(link => link.name === 'Resume')?.href;
@@ -9,13 +9,33 @@ const Hero: React.FC = () => {
     e.preventDefault();
     const contactSection = document.getElementById('contact');
     if (contactSection) {
-      contactSection.scrollIntoView({ behavior: 'smooth' });
+      const headerOffset = 80;
+      const elementPosition = contactSection.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.scrollY - headerOffset;
+      
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth'
+      });
     }
   };
 
   return (
     <section id="hero" className="relative overflow-hidden min-h-[calc(100vh-4rem)] flex flex-col justify-center py-20 text-center">
-      <div className="max-w-4xl mx-auto">
+      <div className="max-w-4xl mx-auto px-6">
+        
+        {/* Profile Image */}
+        <div className="mb-12 flex justify-center animate-fade-in-up" style={{ animationDelay: '0s', animationFillMode: 'backwards' }}>
+            <div className="relative group">
+                <div className="absolute -inset-1 bg-gradient-to-r from-accent to-purple-600 rounded-full blur opacity-25 group-hover:opacity-50 transition duration-1000 group-hover:duration-200"></div>
+                <img 
+                    src={PROFILE_IMAGE_URL}
+                    alt={HERO_CONTENT.name}
+                    className="relative w-48 h-48 md:w-64 md:h-64 rounded-full object-cover border-4 border-white dark:border-slate-900 shadow-2xl transition-transform duration-300 group-hover:scale-105"
+                />
+            </div>
+        </div>
+
         <h1 className="text-5xl md:text-7xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-slate-800 to-slate-500 dark:from-slate-50 dark:to-slate-400 py-2 animate-fade-in-up"
          style={{ animationDelay: '0.1s', animationFillMode: 'backwards' }}>
           {HERO_CONTENT.name}

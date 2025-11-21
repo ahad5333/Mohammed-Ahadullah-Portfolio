@@ -1,6 +1,6 @@
 
 import React, { useState, useEffect, useRef } from 'react';
-import { ABOUT_CONTENT } from '../constants';
+import { ABOUT_CONTENT, PROFILE_IMAGE_URL } from '../constants';
 
 // Fix: Make children prop optional to work around a potential type-checking issue.
 const SectionTitle = ({ children }: { children?: React.ReactNode }) => (
@@ -46,7 +46,7 @@ const About: React.FC = () => {
       <div className="flex flex-col md:flex-row items-center gap-12">
         <div className="md:w-1/3 flex justify-center">
             <img 
-                src="https://github.com/ahad5333.png" 
+                src={PROFILE_IMAGE_URL}
                 alt="Profile"
                 className="rounded-full w-48 h-48 md:w-64 md:h-64 object-cover border-4 border-accent shadow-lg"
             />
