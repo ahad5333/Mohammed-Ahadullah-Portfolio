@@ -64,7 +64,9 @@ const FeaturedProjectCard: React.FC<{ project: ProjectItem }> = ({ project }) =>
                 )}
                 <img 
                     src={project.imageUrl} 
-                    alt={project.title} 
+                    alt={project.title}
+                    loading="lazy"
+                    decoding="async"
                     onLoad={() => setImageLoaded(true)}
                     className={`w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 ${imageLoaded ? 'opacity-100' : 'opacity-0'}`} 
                 />
@@ -161,6 +163,7 @@ const ProjectCard: React.FC<{ project: ProjectItem; index: number }> = ({ projec
                     src={project.imageUrl} 
                     alt={project.title} 
                     loading="lazy"
+                    decoding="async"
                     onLoad={() => setImageLoaded(true)}
                     className={`w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 ${imageLoaded ? 'opacity-100' : 'opacity-0'}`} />
                 

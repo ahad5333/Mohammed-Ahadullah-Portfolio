@@ -1,9 +1,7 @@
-
 import React from 'react';
-import { HERO_CONTENT, SOCIAL_LINKS, NAV_LINKS, PROFILE_IMAGE_URL } from '../constants';
+import { HERO_CONTENT, SOCIAL_LINKS, PROFILE_IMAGE_URL, RESUME_URL } from '../constants';
 
 const Hero: React.FC = () => {
-  const resumeLink = NAV_LINKS.find(link => link.name === 'Resume')?.href;
 
   const handleContactClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
     e.preventDefault();
@@ -57,7 +55,7 @@ const Hero: React.FC = () => {
               Contact Me
             </a>
             <a 
-              href={resumeLink || '#'}
+              href={RESUME_URL}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block border-2 border-accent text-accent dark:border-dark-accent dark:text-dark-accent font-semibold py-[10px] px-8 rounded-lg hover:bg-accent/10 dark:hover:bg-dark-accent/10 transition-all duration-300"

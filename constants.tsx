@@ -1,3 +1,4 @@
+
 import React from 'react';
 import type { NavLink, SocialLink, ExperienceItem, ProjectItem, SkillCategory, Skill, TestimonialItem } from './types';
 
@@ -25,9 +26,9 @@ const IconNodeJs = ({ className = "h-12 w-12" }) => <svg className={className} v
 const IconJavascript = ({ className = "h-12 w-12" }) => <svg className={className} viewBox="0 0 24 24"><path fill="#F7DF1E" d="M0 0h24v24H0z"/><path d="M1.334 22.668h21.332V1.332H1.334v21.336zM11.998 12.18l-2.427-1.402-.002-2.802 5.567 3.214-.002-3.212 2.222-1.283v8.528l-5.362-3.1-2.43 1.403v2.803l5.568-3.215-.002 3.213-2.222 1.282V9.95z"/></svg>;
 const IconPython = ({ className = "h-12 w-12" }) => <svg className={className} viewBox="0 0 24 24"><path fill="#3776AB" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 15.93c-3.22-.1-5.93-2.82-6.03-6.04.1-3.22 2.81-5.94 6.03-6.04h2.01v2.01h-2.01c-2.14.08-3.86 1.81-3.94 3.95.08 2.14 1.8 3.87 3.94 3.95h2.01v2.17h-2.01zm6.04-6.04c-.1 3.22-2.81 5.94-6.03 6.04h-2.01v-2.01h2.01c2.14-.08 3.86-1.81 3.94-3.95-.08-2.14-1.8-3.87-3.94-3.95h-2.01V5.8h2.01c3.22.1 5.93 2.82 6.03 6.04z"/><path fill="#FFD43B" d="M8.5 10H10v4H8.5zM14 10h1.5v4H14z"/></svg>;
 const IconMongo = ({ className = "h-12 w-12" }) => <svg className={className} viewBox="0 0 24 24"><path fill="#4DB33D" d="M16,14.8c-2.3-1.4-2.3-3.1,0-4.5c0.7-0.4,1.4-0.8,1.4-1.7c0-1.2-1.2-1.9-2.5-1.9c-1.6,0-2.8,0.9-2.8,2.3c0,0.8,0.5,1.2,1,1.5c-2.3,1.4-2.3,3.1,0,4.5c-0.5,0.3-1,0.7-1,1.5c0,1.4,1.2,2.3,2.8,2.3c1.3,0,2.5-0.7,2.5-1.9c0-0.9-0.7-1.3-1.4-1.7H16z"/><path fill="#39A139" d="M13.9,6.7c1.3,0,2.5,0.7,2.5,1.9c0,0.9-0.7,1.3-1.4,1.7c-2.3,1.4-2.3,3.1,0,4.5c0.7,0.4,1.4,0.8,1.4,1.7c0,1.2-1.2,1.9-2.5,1.9c-1.6,0-2.8-0.9-2.8-2.3c0-0.8,0.5-1.2,1-1.5c-1.8-1.1-1.8-2.7,0-3.8c-0.5-0.3-1-0.7-1-1.5C11.1,7.6,12.3,6.7,13.9,6.7z"/></svg>;
-const IconDocker = ({ className = "h-12 w-12" }) => <svg className={className} viewBox="0 0 24 24"><path fill="#2496ED" d="M21.93,12.2a4.44,4.44,0,0,0-2.7-4,1.42,1.42,0,0,0-1.1-.1A6.73,6.73,0,0,0,12.5,2.4,6.7,6.7,0,0,0,2.4,9.5a6.7,6.7,0,0,0,.6,3L2.3,13a1.42,1.42,0,0,0-.4,1,1.4,1.4,0,0,0,1.5,1.4H4v.1h.1V17H4v.1h.1v.1h.1v.1H4v.1h.1v.1H4v.1h.1v.1H4v.1h.1v.1H4v.1h.1v.1H4v.1h.1v.1H4v.1h.1v.1H4v.1h.1v.1H4v.1h.1v.1H4v.1h.1v.1H4v.1h.1l.1.1v.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.-2.4a3.84,3.84,0,0,0-3.1-2.9,1.42,1.42,0,0,0-1.4.6,4.44,4.44,0,0,0-4,2.7A4.44,4.44,0,0,0,12.5,21.9a1.42,1.42,0,0,0,.6,1.4,3.84,3.84,0,0,0,2.9,3.1h2.5a3.84,3.84,0,0,0,3.1-2.9,1.42,1.42,0,0,0-.6-1.4,4.44,4.44,0,0,0-2.7-4Z"/></svg>;
+const IconDocker = ({ className = "h-12 w-12" }) => <svg className={className} viewBox="0 0 24 24"><path fill="#2496ED" d="M21.93,12.2a4.44,4.44,0,0,0-2.7-4,1.42,1.42,0,0,0-1.1-.1A6.73,6.73,0,0,0,12.5,2.4,6.7,6.7,0,0,0,2.4,9.5a6.7,6.7,0,0,0,.6,3L2.3,13a1.42,1.42,0,0,0-.4,1,1.4,1.4,0,0,0,1.5,1.4H4v.1h.1V17H4v.1h.1v.1h.1v.1H4v.1h.1v.1H4v.1h.1v.1H4v.1h.1v.1H4v.1h.1v.1H4v.1h.1v.1H4v.1h.1v.1H4v.1h.1v.1H4v.1h.1v.1H4v.1h.1v.1H4v.1h.1v.1H4v.1h.1v.1H4v.1h.1v.1H4v.1h.1v.1H4v.1h.1v.1H4v.1h.1l.1.1v.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.-2.4a3.84,3.84,0,0,0-3.1-2.9,1.42,1.42,0,0,0-1.4.6,4.44,4.44,0,0,0-4,2.7A4.44,4.44,0,0,0,12.5,21.9a1.42,1.42,0,0,0,.6,1.4,3.84,3.84,0,0,0,2.9,3.1h2.5a3.84,3.84,0,0,0,3.1-2.9,1.42,1.42,0,0,0-.6-1.4,4.44,4.44,0,0,0-2.7-4Z"/></svg>;
 const IconAws = ({ className = "h-12 w-12" }) => <svg className={className} viewBox="0 0 24 24"><path fill="#FF9900" d="M12.44,14.65a2.5,2.5,0,0,0-2.45,0L5.22,12.8A2.52,2.52,0,0,0,6.4,9.65L9.9,12.2a2.49,2.49,0,0,0,2.54,0l3.5-2.55a2.52,2.52,0,0,0,1.18,3.15ZM10,14.65a2.5,2.5,0,0,0,0,2.45l2.45,4.77a2.5,2.5,0,0,0,3.67,0L18.5,17.1a2.5,2.5,0,0,0,0-2.45L15,10ZM13.56,9.1a2.5,2.5,0,0,0,2.45,0l4.77-2.45a2.5,2.5,0,0,0,0-3.67L16.01,.5a2.5,2.5,0,0,0-2.45,0L9,5.27a2.5,2.5,0,0,0,0,2.45Z"/></svg>;
-const IconHtml5 = ({ className = "h-12 w-12" }) => <svg className={className} viewBox="0 0 24 24"><path fill="#E34F26" d="M3,3h18v18H3V3z"/><path fill="#EF652A" d="M12,5v14h7.5L18,8h-6V5z"/><path fill="#EBEBEB" d="M12,10h-3l-0.25,3h3.25V10z M12,14h-3.5l-0.25,3h3.75V14z"/><path fill="#FFFFFF" d="M12,10v3h3.75l-0.25-3H12z M12,14v3h3.5l-0.25-3H12z"/></svg>;
+const IconHtml5 = ({ className = "h-reu12 w-12" }) => <svg className={className} viewBox="0 0 24 24"><path fill="#E34F26" d="M3,3h18v18H3V3z"/><path fill="#EF652A" d="M12,5v14h7.5L18,8h-6V5z"/><path fill="#EBEBEB" d="M12,10h-3l-0.25,3h3.25V10z M12,14h-3.5l-0.25,3h3.75V14z"/><path fill="#FFFFFF" d="M12,10v3h3.75l-0.25-3H12z M12,14v3h3.5l-0.25-3H12z"/></svg>;
 const IconCss3 = ({ className = "h-12 w-12" }) => <svg className={className} viewBox="0 0 24 24"><path fill="#1572B6" d="M3,3h18v18H3V3z"/><path fill="#33A9DC" d="M12,5v14h7.5L18,8h-6V5z"/><path fill="#EBEBEB" d="M12,10h-3l-0.25,3h3.25V10z M12,14h-3.5l-0.25,3h3.75V14z"/><path fill="#FFFFFF" d="M12,10v3h3.75l-0.25-3H12z M12,14v3h3.5l-0.25-3H12z"/></svg>;
 const IconBootstrap = ({ className = "h-12 w-12" }) => <svg className={className} viewBox="0 0 24 24"><path fill="#7952B3" d="M12,2C6.48,2,2,6.48,2,12s4.48,10,10,10s10-4.48,10-10S17.52,2,12,2z M16.5,15.5h-9V8.5h9V15.5z"/><path fill="#FFFFFF" d="M15,10h-2v4h2V10z M12,10h-2v4h2V10z"/></svg>;
 const IconTailwind = ({ className = "h-12 w-12" }) => <svg className={className} viewBox="0 0 24 24"><path fill="#38BDF8" d="M12,2C6.48,2,2,6.48,2,12s4.48,10,10,10s10-4.48,10-10S17.52,2,12,2z M17,14c-1.66,0-3-1.34-3-3s1.34-3,3-3s3,1.34,3,3S18.66,14,17,14z M10,14c-1.66,0-3-1.34-3-3s1.34-3,3-3s3,1.34,3,3S11.66,14,10,14z"/></svg>;
@@ -46,6 +47,8 @@ export const NAV_LINKS: NavLink[] = [
   { name: 'Skills', href: '#skills' },
   { name: 'Contact', href: '#contact' },
 ];
+
+export const RESUME_URL = "https://drive.google.com/file/d/1SmmNA3KMts5Qpd1euilnpGUNJ0dELJxR/view?usp=sharing";
 
 export const SOCIAL_LINKS: SocialLink[] = [
   { name: 'GitHub', href: 'https://github.com/ahad5333', icon: IconGitHub },
@@ -111,7 +114,7 @@ export const PROJECTS_CONTENT: ProjectItem[] = [
         title: 'Naufel Bakers',
         description: 'A modern, responsive bakery website featuring a delightful product gallery, seamless online ordering system, and an engaging user interface designed to capture the warmth of handcrafted pastries.',
         technologies: ['React', 'Tailwind CSS', 'Framer Motion', 'Vercel'],
-        imageUrl: 'https://images.unsplash.com/photo-1612203985729-70726954388c?q=80&w=1200&auto=format&fit=crop',
+        imageUrl: 'https://images.unsplash.com/photo-1612203985729-70726954388c?q=80&w=1000&auto=format&fit=crop',
         liveUrl: 'https://naufel-bakers-website.vercel.app/',
         repoUrl: 'https://github.com/ahad5333/Naufel-Bakers',
       },
@@ -119,28 +122,28 @@ export const PROJECTS_CONTENT: ProjectItem[] = [
         title: 'TripNest',
         description: 'A comprehensive travel booking platform allowing users to explore destinations, book hotels, and manage their trip itineraries with ease.',
         technologies: ['React', 'Node.js', 'Express', 'MongoDB'],
-        imageUrl: 'https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?q=80&w=1200&auto=format&fit=crop',
+        imageUrl: 'https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?q=80&w=600&auto=format&fit=crop',
         repoUrl: 'https://github.com/ahad5333/TripNest',
       },
       {
         title: 'Flavour Fleet India',
         description: 'A full-stack web application for food delivery that allows users to browse restaurant menus, place orders, and track deliveries in real-time.',
         technologies: ['React', 'Node.js', 'Express', 'MongoDB', 'Mongoose'],
-        imageUrl: 'https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?q=80&w=800&auto=format&fit=crop',
+        imageUrl: 'https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?q=80&w=600&auto=format&fit=crop',
         repoUrl: 'https://github.com/ahad5333/FlavourFleetIndia',
       },
       {
         title: 'Turtle Racing Game',
         description: 'An interactive and fun racing simulation game built with Python, where users can place bets on their favorite turtles and watch them race to the finish line.',
         technologies: ['Python', 'Turtle Graphics'],
-        imageUrl: 'https://media.istockphoto.com/id/113614085/photo/tortoises-running-in-sneakers.webp?a=1&b=1&s=612x612&w=0&k=20&c=LCj3lm8qCwvqfEnuknkuoYh--g8-3n2aTIHL_D10H4g=',
+        imageUrl: 'https://images.unsplash.com/photo-1437622645530-1e6b3e46a5d3?q=80&w=600&auto=format&fit=crop',
         repoUrl: 'https://github.com/ahad5333/Turtle_racing_game',
       },
       {
         title: 'AI Summarizer(Personal Chat Bot)',
         description: 'An application leveraging AI to provide concise summaries of long articles or text, built with a modern React frontend.',
         technologies: ['React', 'Vite', 'AI API', 'Tailwind CSS'],
-        imageUrl: 'https://images.unsplash.com/photo-1620712943543-bcc4688e7485?q=80&w=800&auto=format&fit=crop',
+        imageUrl: 'https://images.unsplash.com/photo-1620712943543-bcc4688e7485?q=80&w=600&auto=format&fit=crop',
         repoUrl: 'https://github.com/ahad5333/personal-chat-bot',
       },
 ];

@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { NAV_LINKS, HERO_CONTENT, SOCIAL_LINKS } from '../constants';
 
@@ -65,7 +64,7 @@ const Header: React.FC<HeaderProps> = ({ theme, toggleTheme }) => {
   return (
     <header className="sticky top-0 z-50 bg-slate-50/80 dark:bg-slate-900/80 backdrop-blur-sm border-b border-slate-200 dark:border-slate-800">
       <div className="container mx-auto px-6 md:px-12">
-        <div className="flex items-center justify-between h-16">
+        <div className="flex items-center justify-between h-16 gap-8">
           <a href="#" onClick={(e) => handleNavClick(e, '#hero')} className="flex-shrink-0 text-2xl font-bold text-slate-800 dark:text-slate-50 hover:text-accent dark:hover:text-dark-accent transition-colors">
             {HERO_CONTENT.name.split(' ')[0]}
           </a>
