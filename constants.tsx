@@ -22,6 +22,7 @@ const IconWhatsapp: React.FC<React.SVGProps<SVGSVGElement>> = (props) => (
 
 // --- SKILL ICONS (Add your own here) ---
 const IconReact = ({ className = "h-12 w-12" }) => <svg className={className} viewBox="-11.5 -10.23174 23 20.46348"><circle cx="0" cy="0" r="2.05" fill="#61dafb"></circle><g stroke="#61dafb" strokeWidth="1" fill="none"><ellipse rx="11" ry="4.2"></ellipse><ellipse rx="11" ry="4.2" transform="rotate(60)"></ellipse><ellipse rx="11" ry="4.2" transform="rotate(120)"></ellipse></g></svg>;
+
 const IconNodeJs = ({ className = "h-12 w-12" }) => <svg className={className} viewBox="0 0 256 256"><path fill="#8CC84B" d="M128.311 251.622c-70.52 0-106.883-48.77-106.883-48.77V53.149l106.883-48.771 106.883 48.77v149.703s-36.363 48.77-106.883 48.77z"></path><path fill="#FFFFFF" d="m143.435 158.955 45.195-25.753-45.548-26.136.143 51.889zm-29.08-109.282-70.088 40.245v80.49l70.088 40.245 70.088-40.245v-80.49L114.355 49.673zm41.28 92.493-16.144-9.252-25.136 14.364V94.81l41.28-23.824v81.177z"></path></svg>;
 const IconJavascript = ({ className = "h-12 w-12" }) => <svg className={className} viewBox="0 0 24 24"><path fill="#F7DF1E" d="M0 0h24v24H0z"/><path d="M1.334 22.668h21.332V1.332H1.334v21.336zM11.998 12.18l-2.427-1.402-.002-2.802 5.567 3.214-.002-3.212 2.222-1.283v8.528l-5.362-3.1-2.43 1.403v2.803l5.568-3.215-.002 3.213-2.222 1.282V9.95z"/></svg>;
 const IconPython = ({ className = "h-12 w-12" }) => <svg className={className} viewBox="0 0 24 24"><path fill="#3776AB" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 15.93c-3.22-.1-5.93-2.82-6.03-6.04.1-3.22 2.81-5.94 6.03-6.04h2.01v2.01h-2.01c-2.14.08-3.86 1.81-3.94 3.95.08 2.14 1.8 3.87 3.94 3.95h2.01v2.17h-2.01zm6.04-6.04c-.1 3.22-2.81 5.94-6.03 6.04h-2.01v-2.01h2.01c2.14-.08 3.86-1.81 3.94-3.95-.08-2.14-1.8-3.87-3.94-3.95h-2.01V5.8h2.01c3.22.1 5.93 2.82 6.03 6.04z"/><path fill="#FFD43B" d="M8.5 10H10v4H8.5zM14 10h1.5v4H14z"/></svg>;
@@ -72,41 +73,71 @@ export const ABOUT_CONTENT = {
 }
 
 export const EXPERIENCE_CONTENT: ExperienceItem[] = [
-    {
-      role: 'Web Development Intern',
-      company: 'Teks Academy',
-      duration: 'Aug 2024 - Jan 2025',
-      description: [
-        'Developed a food delivery application, enhancing user experience and accessibility.',
-        'Collaborated with a team to create an automation chatbot messaging app, streamlining communication.',
-        'Designed and launched a bakery website, showcasing products and improving online presence.',
-        'Gained hands-on experience in web development technologies and teamwork in a startup environment.'
-      ],
-      technologies: ['React.js', 'Node.js', 'Express.js', 'Tailwind CSS', 'HTML5', 'CSS'],
-    },
-    {
-        role: 'Data Entry & Product Matching Intern',
-        company: 'ThenX (Remote)',
-        duration: 'Feb 2023 - Feb 2024',
-        description: [
-          'Managed and validated FMCG product data for accurate e-commerce listings.',
-          'Matched and categorized retail data to ensure reliable product catalogs.',
-          'Strengthened remote communication and self-management skills in a dynamic startup environment.'
-        ],
-        technologies: ['Data Management', 'E-commerce', 'Quality Assurance'],
-      },
-      {
-        role: 'Data Analyst – Google Help Center Project',
-        company: 'Teleperformance, Hyderabad',
-        duration: 'Jan 2022 - Jan 2023',
-        description: [
-          'Collaborated with the Google Help Center team to analyze and structure large volumes of data for chatbot model improvement.',
-          'Partnered with MLOps teams to ensure verified datasets were passed into model pipelines, boosting NLP performance.',
-          'Documented false positives and classification errors, supporting iterative model refinement.',
-          'Recognized as "Employee of the Month" for high accuracy and effective collaboration.'
-        ],
-        technologies: ['Data Analysis', 'NLP', 'Chatbot Training', 'Quality Control'],
-      },
+  {
+    role: 'Full-stack Developer Intern',
+    company: 'Teks Academy',
+    duration: 'Jan 2025 - Aug 2025 · 8 mos',
+    description: [
+      'Developed a food delivery application, enhancing user experience and accessibility.',
+      'Collaborated with a team to create an automation chatbot messaging app, streamlining communication.',
+      'Designed and launched a bakery website, showcasing products and improving online presence.',
+      'Gained hands-on experience in web development technologies and teamwork in a startup environment.'
+    ],
+    technologies: [
+      'HTML5', 'CSS', 'Tailwind CSS', 'Front-End Design', 'Microsoft Power BI', 
+      'SQL', 'Figma', 'Adobe Photoshop', 'Express.js', 'Node.js', 'JavaScript', 
+      'Python', 'React.js'
+    ]
+  },
+  {
+    role: 'Web Developer',
+    company: 'Noon',
+    duration: 'May 2024 - Jan 2025 · 9 mos',
+    description: [
+      'Developed and maintained responsive frontend e-commerce platforms with key features such as user authentication, shopping carts, checkout flows, and admin dashboards.',
+      'Improved frontend performance by optimizing load times by up to 35% and enhancing API response efficiency, ensuring a smooth user experience.',
+      'Integrated third-party APIs, including payment gateways and secure authentication modules, to provide reliable and scalable functionality.',
+      'Collaborated with backend developers and designers to implement new features and troubleshoot issues, ensuring consistent platform performance.',
+      'Implemented best practices in coding, testing, and deployment to improve maintainability and scalability of the applications.',
+      'Actively monitored platform performance and user behavior to identify optimization opportunities and enhance site usability.',
+      'Contributed to project planning and feature prioritization, aligning development work with business goals and customer needs.'
+    ],
+    technologies: [
+      'Front-End Development', 'Visual Web Developer', 'Software Infrastructure', 
+      'Engineering', 'Internet Software'
+    ]
+  },
+  {
+    role: 'Data Management & Automation Intern',
+    company: 'ThenX Digital',
+    duration: 'Mar 2023 - Apr 2024 · 1 yr 2 mos',
+    description: [
+      'Completed a one-year part-time remote internship as a Data Entry and FMCG Product Matching Intern.',
+      'Accurately entered and validated FMCG product information to ensure clean and reliable product catalogs.',
+      'Matched and categorized products with retail data to improve e-commerce listings and customer experience.',
+      'Gained practical exposure to product lifecycles, naming conventions, and regional branding variations.',
+      'Strengthened self-discipline, time management, and ability to work independently in a remote environment.'
+    ],
+    technologies: [
+      'Program Management', 'E-Commerce', 'Business Development'
+    ]
+  },
+  {
+    role: 'Data Analyst',
+    company: 'TP',
+    duration: 'Jan 2022 - Jan 2023 · 1 yr 1 mo',
+    description: [
+      'Collaborated with the Google Help Center team to streamline and categorize large volumes of support data, boosting search accuracy and efficiency.',
+      'Utilized data sorting and analysis tools to structure chatbot input training, enhancing its ability to understand user queries.',
+      'Worked closely with the MLOps team to ensure clean, verified datasets were passed into model pipelines, improving NLP model performance.',
+      'Maintained detailed records of anomalies, false positives, and model misclassifications to support iterative ML improvements.',
+      'Contributed in data validation cycles and peer-reviewed datasets prepared by junior analysts.',
+      'Received "Employee of the Month" for high accuracy in data classification and proactive collaboration.'
+    ],
+    technologies: [
+      'Software Infrastructure', 'Statistical Data Analysis', 'Python'
+    ]
+  }
 ];
 
 export const PROJECTS_CONTENT: ProjectItem[] = [
@@ -163,7 +194,13 @@ export const TESTIMONIALS_CONTENT: TestimonialItem[] = [
   quote: "The full-stack application Mohammed built for us exceeded all expectations. His attention to detail in both frontend and backend development is top-notch. I would highly recommend him.",
   name: "Neha Reddy",
   title: "Lead Operations, Teks Academy",
+},
+{
+  quote: "The web application developed by him at Noon significantly improved our checkout speed and reliability. His careful work on frontend performance and API integrations helped deliver a smooth, fast, and secure experience for our customers. I strongly endorse his skills and professionalism.",
+  name: "Ahmed Al‑Nuaimi",
+  title: "Senior Product Manager, Noon",
 }
+
 
 
 ];
