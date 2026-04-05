@@ -1,60 +1,78 @@
 
-import React, { useState, useEffect, useRef } from 'react';
+import React from 'react';
+import { motion } from 'motion/react';
 import { ABOUT_CONTENT, PROFILE_IMAGE_URL } from '../constants';
-
-// Fix: Make children prop optional to work around a potential type-checking issue.
-const SectionTitle = ({ children }: { children?: React.ReactNode }) => (
-  <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">{children}</h2>
-);
+import { User } from 'lucide-react';
 
 const About: React.FC = () => {
-  const [isVisible, setIsVisible] = useState(false);
-  const sectionRef = useRef<HTMLElement>(null);
-
-  useEffect(() => {
-      const observer = new IntersectionObserver(
-          ([entry]) => {
-              if (entry.isIntersecting) {
-                  setIsVisible(true);
-                  observer.unobserve(entry.target);
-              }
-          },
-          {
-              threshold: 0.1,
-          }
-      );
-
-      const currentRef = sectionRef.current;
-      if (currentRef) {
-          observer.observe(currentRef);
-      }
-
-      return () => {
-          if (currentRef) {
-              observer.unobserve(currentRef);
-          }
-      };
-  }, []);
-
   return (
-    <section 
-        ref={sectionRef}
-        id="about" 
-        className={`py-20 md:py-32 ${isVisible ? 'animate-fade-in-up' : 'opacity-0'}`}
-    >
-       <SectionTitle>About Me</SectionTitle>
-      <div className="flex flex-col md:flex-row items-center gap-12">
-        <div className="md:w-1/3 flex justify-center">
+    <section id="about" className="py-20">
+      <div className="flex flex-col items-center mb-16">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="flex items-center gap-2 px-4 py-2 rounded-full bg-accent/10 text-accent text-sm font-bold mb-4"
+        >
+          <User className="w-4 h-4" />
+          About Me
+        </motion.div>
+        <motion.h2 
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ delay: 0.1 }}
+          className="text-4xl md:text-6xl font-display font-bold text-slate-900 dark:text-white text-center"
+        >
+          My Story
+        </motion.h2>
+      </div>
+
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <motion.div
+          initial={{ opacity: 0, x: -30 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
+          className="relative"
+        >
+          <div className="relative z-10 rounded-3xl overflow-hidden border-8 border-white dark:border-dark-card shadow-2xl aspect-square max-w-md mx-auto lg:mx-0">
             <img 
-                src={PROFILE_IMAGE_URL}
-                alt="Profile"
-                className="rounded-full w-48 h-48 md:w-64 md:h-64 object-cover border-4 border-accent shadow-lg"
+              src={PROFILE_IMAGE_URL} 
+              alt="Profile" 
+              referrerPolicy="no-referrer"
+              className="w-full h-full object-cover"
             />
-        </div>
-        <div className="md:w-2/3 text-lg text-slate-500 dark:text-slate-400 space-y-6 text-center md:text-left">
-          <p>{ABOUT_CONTENT.p1}</p>
-          <p>{ABOUT_CONTENT.p2}</p>
-        </div>
+          </div>
+          {/* Decorative elements */}
+          <div className="absolute -top-6 -left-6 w-32 h-32 bg-accent/20 rounded-full blur-3xl -z-10" />
+          <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-accent/20 rounded-full blur-3xl -z-10" />
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, x: 30 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
+          className="space-y-6"
+        >
+          <h3 className="text-3xl font-display font-bold text-slate-900 dark:text-white">
+            I'm a passionate Software Engineer based in India.
+          </h3>
+          <div className="space-y-4 text-slate-600 dark:text-slate-400 text-lg leading-relaxed">
+            <p>{ABOUT_CONTENT.p1}</p>
+            <p>{ABOUT_CONTENT.p2}</p>
+          </div>
+          
+          <div className="grid grid-cols-2 gap-6 pt-6">
+            <div className="p-6 rounded-2xl bg-slate-50 dark:bg-slate-900 border border-slate-100 dark:border-slate-800">
+              <p className="text-3xl font-display font-bold text-accent">2+</p>
+              <p className="text-sm font-medium text-slate-500 dark:text-slate-400">Years Experience</p>
+            </div>
+            <div className="p-6 rounded-2xl bg-slate-50 dark:bg-slate-900 border border-slate-100 dark:border-slate-800">
+              <p className="text-3xl font-display font-bold text-accent">10+</p>
+              <p className="text-sm font-medium text-slate-500 dark:text-slate-400">Projects Completed</p>
+            </div>
+          </div>
+        </motion.div>
       </div>
     </section>
   );

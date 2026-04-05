@@ -49,7 +49,7 @@ export const NAV_LINKS: NavLink[] = [
   { name: 'Contact', href: '#contact' },
 ];
 
-export const RESUME_URL = "https://drive.google.com/file/d/1SmmNA3KMts5Qpd1euilnpGUNJ0dELJxR/view?usp=sharing";
+export const RESUME_URL = "https://drive.google.com/file/d/1PD4kIkAqAY82bcFEUzPa0Rrkl3P0JW83/view?usp=sharing";
 
 export const SOCIAL_LINKS: SocialLink[] = [
   { name: 'GitHub', href: 'https://github.com/ahad5333', icon: IconGitHub },
@@ -63,8 +63,8 @@ export const PROFILE_IMAGE_URL = "https://github.com/ahad5333.png";
 
 export const HERO_CONTENT = {
     name: "Mohammed Ahadullah",
-    title: "Full-Stack Developer",
-    subtitle: "I build innovative, user-centric applications, applying my analytical thinking and full-stack skills to contribute to the design and development of modern web solutions."
+    title: "Software Engineer",
+    subtitle: "Crafting high-performance, scalable web solutions with a focus on user experience and architectural excellence. Specializing in modern full-stack development."
 }
 
 export const ABOUT_CONTENT = {
@@ -74,68 +74,56 @@ export const ABOUT_CONTENT = {
 
 export const EXPERIENCE_CONTENT: ExperienceItem[] = [
   {
-    role: 'Full-stack Developer Intern',
+    role: 'Full Stack Developer Intern',
     company: 'Teks Academy',
-    duration: 'Jan 2025 - Aug 2025 · 8 mos',
+    duration: 'May 2025 – Oct 2025',
     description: [
-      'Developed a food delivery application, enhancing user experience and accessibility.',
-      'Collaborated with a team to create an automation chatbot messaging app, streamlining communication.',
-      'Designed and launched a bakery website, showcasing products and improving online presence.',
-      'Gained hands-on experience in web development technologies and teamwork in a startup environment.'
+      'Developed the complete frontend of a food delivery web application using React.js and Tailwind CSS — including landing pages, menu browsing, cart, and order tracking — with a focus on responsiveness and usability.',
+      'Built the UI for an automation chatbot messaging application, designing conversation flows, message components, and real-time state management using React Hooks.',
+      'Designed and launched a fully responsive bakery business website with dynamic cart, WhatsApp/email order integration, and real-time pricing display.',
+      'Owned frontend features end-to-end — from wireframe to production — in a fast-paced startup environment.'
     ],
     technologies: [
-      'HTML5', 'CSS', 'Tailwind CSS', 'Front-End Design', 'Microsoft Power BI', 
-      'SQL', 'Figma', 'Adobe Photoshop', 'Express.js', 'Node.js', 'JavaScript', 
-      'Python', 'React.js'
+      'React.js', 'Tailwind CSS', 'JavaScript', 'Node.js', 'Express.js', 'React Hooks', 'Responsive Design'
     ]
   },
   {
     role: 'Web Developer',
     company: 'Noon',
-    duration: 'May 2024 - Jan 2025 · 9 mos',
+    duration: 'May 2024 – Apr 2025',
     description: [
-      'Developed and maintained responsive frontend e-commerce platforms with key features such as user authentication, shopping carts, checkout flows, and admin dashboards.',
-      'Improved frontend performance by optimizing load times by up to 35% and enhancing API response efficiency, ensuring a smooth user experience.',
-      'Integrated third-party APIs, including payment gateways and secure authentication modules, to provide reliable and scalable functionality.',
-      'Collaborated with backend developers and designers to implement new features and troubleshoot issues, ensuring consistent platform performance.',
-      'Implemented best practices in coding, testing, and deployment to improve maintainability and scalability of the applications.',
-      'Actively monitored platform performance and user behavior to identify optimization opportunities and enhance site usability.',
-      'Contributed to project planning and feature prioritization, aligning development work with business goals and customer needs.'
+      'Built and maintained responsive React.js frontend features for a high-traffic e-commerce platform, consistently delivering pixel-perfect UI across devices and screen sizes.',
+      'Developed key user-facing flows including JWT-based login/signup, product listings, shopping cart, checkout, and admin dashboards.',
+      'Reduced frontend load times by approximately 30% through lazy loading, component-level code splitting, and efficient state management.',
+      'Integrated third-party payment gateways and authentication SDKs into the React frontend.',
+      'Collaborated with backend engineers and UX designers across Agile sprint cycles.'
     ],
     technologies: [
-      'Front-End Development', 'Visual Web Developer', 'Software Infrastructure', 
-      'Engineering', 'Internet Software'
+      'React.js', 'JavaScript', 'JWT', 'Performance Optimization', 'Agile', 'Third-party Integration'
     ]
   },
   {
-    role: 'Data Management & Automation Intern',
-    company: 'ThenX Digital',
-    duration: 'Mar 2023 - Apr 2024 · 1 yr 2 mos',
+    role: 'Data Management & Automation (Remote)',
+    company: 'THENX Digital',
+    duration: 'Feb 2023 – Apr 2024',
     description: [
-      'Completed a one-year part-time remote internship as a Data Entry and FMCG Product Matching Intern.',
-      'Accurately entered and validated FMCG product information to ensure clean and reliable product catalogs.',
-      'Matched and categorized products with retail data to improve e-commerce listings and customer experience.',
-      'Gained practical exposure to product lifecycles, naming conventions, and regional branding variations.',
-      'Strengthened self-discipline, time management, and ability to work independently in a remote environment.'
+      'Worked with product and tech teams on data accuracy improvements affecting frontend product displays.',
+      'Automated repetitive data tasks using Python scripts, reducing manual workload by 40%.'
     ],
     technologies: [
-      'Program Management', 'E-Commerce', 'Business Development'
+      'Python', 'Automation', 'Data Management', 'Remote Collaboration'
     ]
   },
   {
     role: 'Data Analyst',
-    company: 'TP',
-    duration: 'Jan 2022 - Jan 2023 · 1 yr 1 mo',
+    company: 'Teleperformance — Google Help Center Project',
+    duration: 'Jul 2022 – Dec 2022',
     description: [
-      'Collaborated with the Google Help Center team to streamline and categorize large volumes of support data, boosting search accuracy and efficiency.',
-      'Utilized data sorting and analysis tools to structure chatbot input training, enhancing its ability to understand user queries.',
-      'Worked closely with the MLOps team to ensure clean, verified datasets were passed into model pipelines, improving NLP model performance.',
-      'Maintained detailed records of anomalies, false positives, and model misclassifications to support iterative ML improvements.',
-      'Contributed in data validation cycles and peer-reviewed datasets prepared by junior analysts.',
-      'Received "Employee of the Month" for high accuracy in data classification and proactive collaboration.'
+      'Structured and validated datasets used to improve chatbot UI/UX accuracy.',
+      'Awarded Employee of the Month.'
     ],
     technologies: [
-      'Software Infrastructure', 'Statistical Data Analysis', 'Python'
+      'Data Analysis', 'Data Validation', 'Chatbot UI/UX', 'MLOps Support'
     ]
   }
 ];
@@ -150,11 +138,11 @@ export const PROJECTS_CONTENT: ProjectItem[] = [
         repoUrl: 'https://github.com/ahad5333/Naufel-Bakers',
       },
       {
-        title: 'TripNest',
-        description: 'A comprehensive travel booking platform allowing users to explore destinations, book hotels, and manage their trip itineraries with ease.',
-        technologies: ['React', 'Node.js', 'Express', 'MongoDB'],
-        imageUrl: 'https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?q=80&w=600&auto=format&fit=crop',
-        repoUrl: 'https://github.com/ahad5333/TripNest',
+        title: 'House Price Prediction System',
+        description: 'A machine learning-based application that predicts real estate prices based on various features like location, square footage, and amenities, helping users make informed property decisions.',
+        technologies: ['Python', 'Scikit-Learn', 'Pandas', 'Matplotlib'],
+        imageUrl: 'https://images.unsplash.com/photo-1560518883-ce09059eeffa?q=80&w=600&auto=format&fit=crop',
+        repoUrl: 'https://github.com/ahad5333/House-price-prediction-system',
       },
       {
         title: 'Flavour Fleet India',
@@ -164,11 +152,11 @@ export const PROJECTS_CONTENT: ProjectItem[] = [
         repoUrl: 'https://github.com/ahad5333/FlavourFleetIndia',
       },
       {
-        title: 'Turtle Racing Game',
-        description: 'An interactive and fun racing simulation game built with Python, where users can place bets on their favorite turtles and watch them race to the finish line.',
-        technologies: ['Python', 'Turtle Graphics'],
-        imageUrl: 'https://images.unsplash.com/photo-1518467166778-b88f373ffec7?q=80&w=600&auto=format&fit=crop',
-        repoUrl: 'https://github.com/ahad5333/Turtle_racing_game',
+        title: 'AI Traffic Intelligence System',
+        description: 'An advanced AI-powered system designed to analyze traffic patterns, detect anomalies, and optimize flow using real-time data processing and computer vision techniques.',
+        technologies: ['Python', 'OpenCV', 'TensorFlow', 'Deep Learning'],
+        imageUrl: 'https://images.unsplash.com/photo-1494412519320-aa613dfb7738?q=80&w=600&auto=format&fit=crop',
+        repoUrl: 'https://github.com/ahad5333/AI-Traffic-Intelligence-System',
       },
       {
         title: 'AI Summarizer(Personal Chat Bot)',

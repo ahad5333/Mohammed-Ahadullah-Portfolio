@@ -8,6 +8,9 @@
     <meta name="keywords" content="Mohammed Ahadullah, Full Stack Developer, Web Developer, React, Node.js, MongoDB, Express, Portfolio, Software Engineer, JavaScript, TypeScript, Frontend, Backend" />
     <meta name="author" content="Mohammed Ahadullah" />
     <title>Mohammed Ahadullah | Full Stack Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
@@ -15,19 +18,41 @@
         theme: {
           extend: {
             colors: {
-              // Light mode is default
-              accent: '#F43F5E',     // Rose-500
-              'dark-accent': '#FB7185' // Rose-400
+              accent: {
+                DEFAULT: '#F43F5E',
+                50: '#FFF1F2',
+                100: '#FFE4E6',
+                200: '#FECDD3',
+                300: '#FDA4AF',
+                400: '#FB7185',
+                500: '#F43F5E',
+                600: '#E11D48',
+                700: '#BE123C',
+                800: '#9F1239',
+                900: '#881337',
+              },
+              dark: {
+                bg: '#020617',
+                card: '#0f172a',
+                border: '#1e293b',
+              }
             },
             fontFamily: {
                 sans: ['Inter', 'sans-serif'],
+                display: ['Space Grotesk', 'sans-serif'],
             },
             animation: {
+              'blob': 'blob 7s infinite',
               'fade-in-up': 'fadeInUp 0.5s ease-out forwards',
               'fade-in': 'fadeIn 0.5s ease-out forwards',
-              'subtle-pulse': 'subtlePulse 2.5s cubic-bezier(0.4, 0, 0.6, 1) infinite',
             },
             keyframes: {
+              blob: {
+                '0%': { transform: 'translate(0px, 0px) scale(1)' },
+                '33%': { transform: 'translate(30px, -50px) scale(1.1)' },
+                '66%': { transform: 'translate(-20px, 20px) scale(0.9)' },
+                '100%': { transform: 'translate(0px, 0px) scale(1)' },
+              },
               fadeInUp: {
                 '0%': { opacity: '0', transform: 'translateY(20px)' },
                 '100%': { opacity: '1', transform: 'translateY(0)' },
@@ -36,18 +61,11 @@
                 '0%': { opacity: '0' },
                 '100%': { opacity: '1' },
               },
-              subtlePulse: {
-                '0%, 100%': { transform: 'scale(1)' },
-                '50%': { transform: 'scale(1.03)' },
-              }
             },
           },
         },
       }
     </script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/style.css">
   <script type="importmap">
 {
@@ -58,6 +76,7 @@
   }
 }
 </script>
+<link rel="stylesheet" href="/index.css">
 </head>
   <body class="bg-slate-50 font-sans text-slate-800 dark:bg-slate-900 dark:text-slate-50">
     <div id="root"></div>
