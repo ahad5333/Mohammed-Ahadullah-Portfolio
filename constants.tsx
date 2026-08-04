@@ -33,8 +33,33 @@ const IconFlask = ({ className = "h-12 w-12" }) => (
 );
 const IconMachineLearning = ({ className = "h-12 w-12" }) => (
   <svg className={className} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M12 2C6.48 2 2 6.48 2 12S6.48 22 12 22 22 17.52 22 12 17.52 2 12 2ZM11 16H13V14H11V16ZM11 12H13V7H11V12Z" fill="currentColor"/>
-    <path d="M18 10L19 11L20 10L19 9L18 10ZM5 14L4 13L3 14L4 15L5 14ZM12 22V20M12 4V2M20 12H22M2 12H4" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
+    <circle cx="12" cy="5" r="3" fill="#a855f7" />
+    <circle cx="5" cy="12" r="3" fill="#ec4899" />
+    <circle cx="19" cy="12" r="3" fill="#ec4899" />
+    <circle cx="12" cy="19" r="3" fill="#a855f7" />
+    <line x1="12" y1="8" x2="12" y2="16" stroke="currentColor" strokeWidth="2" />
+    <line x1="7.12" y1="10.12" x2="16.88" y2="13.88" stroke="currentColor" strokeWidth="1.5" />
+    <line x1="16.88" y1="10.12" x2="7.12" y2="13.88" stroke="currentColor" strokeWidth="1.5" />
+  </svg>
+);
+
+const IconTensorFlow = ({ className = "h-12 w-12" }) => (
+  <svg className={className} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M12 2L4 6.5V15.5L12 20L20 15.5V6.5L12 2Z" fill="#FFA000"/>
+    <path d="M12 2L4 6.5V15.5L12 20V2Z" fill="#FF6F00"/>
+    <path d="M12 6.5L7 9.3V12.7L12 15.5V6.5Z" fill="#FFE082"/>
+    <path d="M12 6.5L17 9.3V12.7L12 15.5V6.5Z" fill="#FFD54F"/>
+  </svg>
+);
+
+const IconDataAnalysis = ({ className = "h-12 w-12" }) => (
+  <svg className={className} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M3 3V21H21" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
+    <path d="M7 16L12 11L16 14L21 8" stroke="#10b981" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
+    <circle cx="21" cy="8" r="2" fill="#10b981" />
+    <rect x="6" y="12" width="2" height="4" fill="currentColor" opacity="0.3" />
+    <rect x="11" y="8" width="2" height="8" fill="currentColor" opacity="0.3" />
+    <rect x="15" y="10" width="2" height="6" fill="currentColor" opacity="0.3" />
   </svg>
 );
 const IconPython = ({ className = "h-12 w-12" }) => (
@@ -373,8 +398,8 @@ export const SKILLS_CONTENT: SkillCategory[] = [
     name: 'AI & Data Science',
     skills: [
       { name: 'Machine Learning', icon: IconMachineLearning },
-      { name: 'TensorFlow', icon: IconMachineLearning },
-      { name: 'Data Analysis', icon: IconMachineLearning },
+      { name: 'TensorFlow', icon: IconTensorFlow },
+      { name: 'Data Analysis', icon: IconDataAnalysis },
     ],
   },
   {
