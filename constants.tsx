@@ -250,7 +250,7 @@ export const PROJECTS_CONTENT: ProjectItem[] = [
         title: 'AI Summarizer(Personal Chat Bot)',
         description: 'An application leveraging AI to provide concise summaries of long articles or text, built with a modern React frontend.',
         technologies: ['React', 'TypeScript', 'Gemini API', 'Tailwind CSS'],
-        imageUrl: 'https://images.unsplash.com/photo-1620712943543-bcc4688e7485?q=80&w=600&auto=format&fit=crop',
+        imageUrl: '/ai_summarizer_3d.jpg',
         repoUrl: 'https://github.com/ahad5333/personal-chat-bot',
       },
       {
@@ -271,7 +271,7 @@ export const PROJECTS_CONTENT: ProjectItem[] = [
         title: 'VociAi',
         description: 'An AI-powered application that transforms text into high-quality voice audio, utilizing modern web technologies for a seamless user experience.',
         technologies: ['TypeScript', 'React', 'AI Audio API', 'Tailwind CSS'],
-        imageUrl: 'https://images.unsplash.com/photo-1478737270239-2f02b77fc618?q=80&w=600&auto=format&fit=crop',
+        imageUrl: '/vociai_3d.jpg',
         repoUrl: 'https://github.com/ahad5333/VociAi',
       },
       {
@@ -285,7 +285,7 @@ export const PROJECTS_CONTENT: ProjectItem[] = [
         title: 'Credit Card Fraud Detection',
         description: 'A machine learning system designed to detect fraudulent credit card transactions using classification algorithms to identify suspicious patterns in imbalanced datasets.',
         technologies: ['Python', 'Scikit-Learn', 'Pandas', 'Machine Learning'],
-        imageUrl: 'https://images.unsplash.com/photo-1563986768609-322da13575f3?q=80&w=600&auto=format&fit=crop',
+        imageUrl: '/fraud_detection_3d.jpg',
         repoUrl: 'https://github.com/ahad5333/Credit-Card-Fraud-Detection-Machine-Learning-Project',
       },
       {
