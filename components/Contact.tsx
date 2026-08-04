@@ -77,7 +77,10 @@ const Contact: React.FC = () => {
           </div>
 
           <div className="space-y-6">
-            <div className="flex items-center gap-4 group">
+            <a 
+              href="mailto:ahad53344@gmail.com" 
+              className="flex items-center gap-4 group p-3 -m-3 rounded-3xl hover:bg-slate-100/50 dark:hover:bg-slate-900/40 transition-colors"
+            >
               <div className="p-4 rounded-2xl bg-slate-100 dark:bg-slate-900 group-hover:bg-accent/10 transition-colors border border-slate-200/20 dark:border-slate-800/20">
                 <Mail className="w-6 h-6 text-accent" />
               </div>
@@ -85,9 +88,14 @@ const Contact: React.FC = () => {
                 <p className="text-xs font-bold text-slate-400 uppercase tracking-widest">Email Me</p>
                 <p className="text-slate-900 dark:text-white font-semibold">ahad53344@gmail.com</p>
               </div>
-            </div>
+            </a>
 
-            <div className="flex items-center gap-4 group">
+            <a 
+              href="https://www.google.com/maps/search/?api=1&query=Hyderabad,+India"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-4 group p-3 -m-3 rounded-3xl hover:bg-slate-100/50 dark:hover:bg-slate-900/40 transition-colors"
+            >
               <div className="p-4 rounded-2xl bg-slate-100 dark:bg-slate-900 group-hover:bg-accent/10 transition-colors border border-slate-200/20 dark:border-slate-800/20">
                 <MapPin className="w-6 h-6 text-accent animate-bounce" style={{ animationDuration: '3s' }} />
               </div>
@@ -95,7 +103,7 @@ const Contact: React.FC = () => {
                 <p className="text-xs font-bold text-slate-400 uppercase tracking-widest">Location</p>
                 <p className="text-slate-900 dark:text-white font-semibold">Hyderabad, India</p>
               </div>
-            </div>
+            </a>
           </div>
 
           <div className="flex gap-4">
