@@ -144,7 +144,7 @@ export const RESUME_URL = "https://drive.google.com/file/d/1PD4kIkAqAY82bcFEUzPa
 export const SOCIAL_LINKS: SocialLink[] = [
   { name: 'GitHub', href: 'https://github.com/ahad5333', icon: IconGitHub },
   { name: 'LinkedIn', href: 'https://linkedin.com/in/mohammed-ahadullah-962951200', icon: IconLinkedin },
-  { name: 'WhatsApp', href: 'https://wa.me/971527853458', icon: IconWhatsapp },
+  { name: 'WhatsApp', href: 'https://wa.me/916301655968', icon: IconWhatsapp },
 ];
 
 export const PROFILE_IMAGE_URL = "/profile.jpg";
