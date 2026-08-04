@@ -191,3 +191,19 @@ footer {
   padding: 4px;
   border-radius: var(--radius);
 }
+
+/* Subtle pulse animation for LockScreen avatar */
+@keyframes subtle-pulse {
+  0%, 100% {
+    transform: scale(1);
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+  }
+  50% {
+    transform: scale(1.03);
+    box-shadow: 0 20px 35px -5px rgba(244, 63, 94, 0.45), 0 12px 15px -8px rgba(244, 63, 94, 0.3);
+  }
+}
+
+.animate-subtle-pulse {
+  animation: subtle-pulse 3s infinite ease-in-out;
+}

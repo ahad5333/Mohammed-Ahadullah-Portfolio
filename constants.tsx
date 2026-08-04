@@ -139,56 +139,79 @@ export const ABOUT_CONTENT = {
 
 export const EXPERIENCE_CONTENT: ExperienceItem[] = [
   {
-    role: 'Full Stack Developer Intern',
+    role: 'Full Stack Engineer',
+    company: 'Self Employed · Freelance',
+    duration: 'Nov 2025 – Present',
+    description: [
+      'Building personal and freelance web projects using React.js and Node.js while actively seeking a full-time role.',
+      'Enhancing open-source contributions and deepening AWS and system design knowledge.',
+      'Designing and building a full-stack web application for a US-based client, using React.js on the frontend and Node.js/Express on the backend — including UI development, REST API design, database architecture, and production deployment.',
+      'Owning the project end-to-end as an independent contractor, from feature scoping through implementation, testing, and deployment.'
+    ],
+    technologies: [
+      'React.js', 'Node.js', 'Express.js', 'REST APIs', 'AWS', 'System Design', 'Database Architecture'
+    ]
+  },
+  {
+    role: 'Full-stack Developer Intern',
     company: 'Teks Academy',
     duration: 'May 2025 – Oct 2025',
     description: [
-      'Developed the complete frontend of a food delivery web application using React.js and Tailwind CSS — including landing pages, menu browsing, cart, and order tracking — with a focus on responsiveness and usability.',
-      'Built the UI for an automation chatbot messaging application, designing conversation flows, message components, and real-time state management using React Hooks.',
-      'Designed and launched a fully responsive bakery business website with dynamic cart, WhatsApp/email order integration, and real-time pricing display.',
-      'Owned frontend features end-to-end — from wireframe to production — in a fast-paced startup environment.'
+      'Developed a food delivery application, enhancing user experience and accessibility.',
+      'Collaborated with a team to create an automation chatbot messaging app, streamlining communication.',
+      'Designed and launched a bakery website, showcasing products and improving online presence.',
+      'Gained hands-on experience in web development technologies and teamwork in a startup environment.'
     ],
     technologies: [
-      'React.js', 'Tailwind CSS', 'JavaScript', 'Node.js', 'Express.js', 'React Hooks', 'Responsive Design'
+      'React.js', 'Tailwind CSS', 'JavaScript', 'HTML5', 'CSS3', 'Bootstrap', 'Teamwork'
     ]
   },
   {
     role: 'Web Developer',
-    company: 'Noon',
+    company: 'noon',
     duration: 'May 2024 – Apr 2025',
     description: [
-      'Built and maintained responsive React.js frontend features for a high-traffic e-commerce platform, consistently delivering pixel-perfect UI across devices and screen sizes.',
-      'Developed key user-facing flows including JWT-based login/signup, product listings, shopping cart, checkout, and admin dashboards.',
-      'Reduced frontend load times by approximately 30% through lazy loading, component-level code splitting, and efficient state management.',
-      'Integrated third-party payment gateways and authentication SDKs into the React frontend.',
-      'Collaborated with backend engineers and UX designers across Agile sprint cycles.'
+      'Developed and maintained responsive frontend e-commerce platforms with key features such as user authentication, shopping carts, checkout flows, and admin dashboards.',
+      'Improved frontend performance by optimizing load times by up to 35% and enhancing API response efficiency, ensuring a smooth user experience.',
+      'Integrated third-party APIs, including payment gateways and secure authentication modules, to provide reliable and scalable functionality.',
+      'Collaborated with backend developers and designers to implement new features and troubleshoot issues, ensuring consistent platform performance.',
+      'Implemented best practices in coding, testing, and deployment to improve maintainability and scalability of the applications.',
+      'Actively monitored platform performance and user behavior to identify optimization opportunities and enhance site usability.',
+      'Contributed to project planning and feature prioritization, aligning development work with business goals and customer needs.'
     ],
     technologies: [
-      'React.js', 'JavaScript', 'JWT', 'Performance Optimization', 'Agile', 'Third-party Integration'
+      'React.js', 'JavaScript', 'Front-End Development', 'API Integration', 'E-Commerce', 'Performance Optimization'
     ]
   },
   {
-    role: 'Data Management & Automation (Remote)',
-    company: 'THENX Digital',
+    role: 'Data Management & Automation Intern',
+    company: 'THENX DIGITAL',
     duration: 'Feb 2023 – Apr 2024',
     description: [
-      'Worked with product and tech teams on data accuracy improvements affecting frontend product displays.',
-      'Automated repetitive data tasks using Python scripts, reducing manual workload by 40%.'
+      'Completed a one-year part-time remote internship as a Data Entry and FMCG Product Matching Intern.',
+      'Responsible for accurate entry and validation of FMCG product information to ensure clean and reliable product catalogs.',
+      'Matched and categorized products with retail data, contributing to improved e-commerce listings and customer experience.',
+      'Gained practical exposure to product lifecycles, naming conventions, and regional branding variations.',
+      'Strengthened self-discipline, time management, and the ability to work independently in a remote environment.'
     ],
     technologies: [
-      'Python', 'Automation', 'Data Management', 'Remote Collaboration'
+      'Python', 'Automation', 'Data Management', 'E-Commerce', 'Product Matching'
     ]
   },
   {
     role: 'Data Analyst',
-    company: 'Teleperformance — Google Help Center Project',
+    company: 'TP',
     duration: 'Jul 2022 – Dec 2022',
     description: [
-      'Structured and validated datasets used to improve chatbot UI/UX accuracy.',
-      'Awarded Employee of the Month.'
+      'Actively collaborated with the Google Help Center team to streamline and categorize large volumes of support data, boosting search accuracy and efficiency.',
+      'Utilized data sorting and analysis tools to structure chatbot input training, enhancing its ability to understand user queries.',
+      'Worked closely with the MLOps team to ensure clean, verified datasets were passed into model pipelines, improving NLP model performance.',
+      'Maintained detailed records of anomalies, false positives, and model misclassifications to support iterative ML improvements.',
+      'Contributed in data validation cycles and peer-reviewed datasets prepared by junior analysts.',
+      'Received "Employee of the Month" for high accuracy in data classification and proactive collaboration.'
     ],
     technologies: [
-      'Data Analysis', 'Data Validation', 'Chatbot UI/UX', 'MLOps Support'
+      'Data Analysis', 'Data Validation', 'NLP', 'MLOps Support', 'Statistical Data Analysis'
     ]
   }
 ];
