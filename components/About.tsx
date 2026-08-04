@@ -64,7 +64,7 @@ const About: React.FC = () => {
           
           <div className="grid grid-cols-2 gap-6 pt-6">
             <div className="p-6 rounded-2xl bg-slate-50 dark:bg-slate-900 border border-slate-100 dark:border-slate-800">
-              <p className="text-3xl font-display font-bold text-accent">2+</p>
+              <p className="text-3xl font-display font-bold text-accent">4+</p>
               <p className="text-sm font-medium text-slate-500 dark:text-slate-400">Years Experience</p>
             </div>
             <div className="p-6 rounded-2xl bg-slate-50 dark:bg-slate-900 border border-slate-100 dark:border-slate-800">
