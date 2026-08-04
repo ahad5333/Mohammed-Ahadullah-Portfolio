@@ -142,7 +142,7 @@ const Hero: React.FC = () => {
             {/* Interactive 3D Avatar Card */}
             <TiltCard tiltAmount={10} className="relative w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-[3rem] overflow-hidden border-4 border-white dark:border-slate-900 shadow-2xl transform lg:rotate-2">
               <img 
-                src={PROFILE_IMAGE_URL}
+                src="https://github.com/ahad5333.png"
                 alt={HERO_CONTENT.name}
                 referrerPolicy="no-referrer"
                 className="w-full h-full object-cover"
