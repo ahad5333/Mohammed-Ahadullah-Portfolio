@@ -149,7 +149,7 @@ export const SOCIAL_LINKS: SocialLink[] = [
 
 export const PROFILE_IMAGE_URL = "/profile.jpg";
 export const HERO_IMAGE_URL = "/profile.png";
-export const LOCKSCREEN_IMAGE_URL = "/story_profile.png";
+export const LOCKSCREEN_IMAGE_URL = "/lockscreen_laptop.png";
 
 // --- CONTENT - EDIT THIS SECTION ---
 
