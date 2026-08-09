@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { motion } from 'motion/react';
-import { ABOUT_CONTENT, PROFILE_IMAGE_URL } from '../constants';
+import { ABOUT_CONTENT, STORY_IMAGE_URL } from '../constants';
 import { User, Award, Terminal, CheckCircle2 } from 'lucide-react';
 import TiltCard from './TiltCard';
 
@@ -48,7 +48,7 @@ const About: React.FC = () => {
         >
           <TiltCard tiltAmount={10} className="relative w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-[3rem] overflow-hidden border-4 border-white dark:border-slate-900 shadow-2xl">
             <img 
-              src={PROFILE_IMAGE_URL} 
+              src={STORY_IMAGE_URL} 
               alt="Profile" 
               referrerPolicy="no-referrer"
               className="w-full h-full object-cover"

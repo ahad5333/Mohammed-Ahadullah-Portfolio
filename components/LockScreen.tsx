@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'motion/react';
 import { ArrowRight } from 'lucide-react';
-import { HERO_CONTENT, LOCKSCREEN_IMAGE_URL } from '../constants';
+import { HERO_CONTENT, PROFILE_IMAGE_URL } from '../constants';
 import TiltCard from './TiltCard';
 
 interface LockScreenProps {
@@ -34,7 +34,7 @@ const LockScreen: React.FC<LockScreenProps> = ({ onUnlock }) => {
         >
           <TiltCard tiltAmount={10} className="relative w-44 h-44 md:w-52 md:h-52 rounded-full overflow-hidden border-4 border-white dark:border-slate-800 shadow-xl cursor-pointer group">
             <img 
-              src={LOCKSCREEN_IMAGE_URL}
+              src={PROFILE_IMAGE_URL}
               alt="Profile"
               onClick={onUnlock}
               className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
