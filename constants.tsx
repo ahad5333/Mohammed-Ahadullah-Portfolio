@@ -147,7 +147,8 @@ export const SOCIAL_LINKS: SocialLink[] = [
   { name: 'WhatsApp', href: 'https://wa.me/916301655968', icon: IconWhatsapp },
 ];
 
-export const PROFILE_IMAGE_URL = "/profile.png";
+export const PROFILE_IMAGE_URL = "/profile.jpg";
+export const HERO_IMAGE_URL = "/profile.png";
 
 // --- CONTENT - EDIT THIS SECTION ---
 

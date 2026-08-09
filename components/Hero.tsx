@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'motion/react';
-import { HERO_CONTENT, SOCIAL_LINKS, PROFILE_IMAGE_URL, RESUME_URL } from '../constants';
+import { HERO_CONTENT, SOCIAL_LINKS, HERO_IMAGE_URL, RESUME_URL } from '../constants';
 import { ArrowRight, Download, Code2, Server, Cloud } from 'lucide-react';
 import TiltCard from './TiltCard';
 
@@ -142,7 +142,7 @@ const Hero: React.FC = () => {
             {/* Interactive 3D Avatar Card */}
             <TiltCard tiltAmount={10} className="relative w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-[3rem] overflow-hidden border-4 border-white dark:border-slate-900 shadow-2xl transform lg:rotate-2">
               <img 
-                src={PROFILE_IMAGE_URL}
+                src={HERO_IMAGE_URL}
                 alt={HERO_CONTENT.name}
                 referrerPolicy="no-referrer"
                 className="w-full h-full object-cover"
