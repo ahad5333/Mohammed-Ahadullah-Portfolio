@@ -43,10 +43,17 @@ const Projects: React.FC = () => {
     return 'Web Development';
   };
 
+  // Web projects come first because they are what small-business clients care about most.
+  const categoryRank = (project: typeof PROJECTS_CONTENT[0]) =>
+    getProjectCategory(project) === 'Web Development' ? 0 : 1;
+
   const filteredProjects = PROJECTS_CONTENT.filter(project => {
     if (activeCategory === 'All') return true;
     return getProjectCategory(project) === activeCategory;
-  });
+  })
+    .map((project, index) => ({ project, index }))
+    .sort((a, b) => categoryRank(a.project) - categoryRank(b.project) || a.index - b.index)
+    .map(({ project }) => project);
 
   // Icon selector for filter buttons
   const getCategoryIcon = (category: string) => {
@@ -172,6 +179,32 @@ const Projects: React.FC = () => {
                     >
                       {project.description}
                     </p>
+                    {(project.liveUrl || project.repoUrl) && (
+                      <div className="flex flex-wrap gap-3 mb-6" style={{ transform: 'translateZ(30px)' }}>
+                        {project.liveUrl && (
+                          <a
+                            href={project.liveUrl}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-accent text-white text-xs font-bold uppercase tracking-wider hover:bg-accent/90 transition-colors"
+                          >
+                            <ExternalLink className="w-4 h-4" />
+                            Live demo
+                          </a>
+                        )}
+                        {project.repoUrl && (
+                          <a
+                            href={project.repoUrl}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-slate-300 dark:border-slate-700 text-slate-700 dark:text-slate-300 text-xs font-bold uppercase tracking-wider hover:border-accent hover:text-accent transition-colors"
+                          >
+                            <Github className="w-4 h-4" />
+                            Code
+                          </a>
+                        )}
+                      </div>
+                    )}
                     <div className="flex flex-wrap gap-2 mt-auto" style={{ transform: 'translateZ(30px)' }}>
                       {project.technologies.map((tech) => (
                         <span 

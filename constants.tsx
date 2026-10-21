@@ -70,7 +70,18 @@ const IconPython = ({ className = "h-12 w-12" }) => (
   </svg>
 );
 const IconMongo = ({ className = "h-12 w-12" }) => <svg className={className} viewBox="0 0 24 24"><path fill="#4DB33D" d="M16,14.8c-2.3-1.4-2.3-3.1,0-4.5c0.7-0.4,1.4-0.8,1.4-1.7c0-1.2-1.2-1.9-2.5-1.9c-1.6,0-2.8,0.9-2.8,2.3c0,0.8,0.5,1.2,1,1.5c-2.3,1.4-2.3,3.1,0,4.5c-0.5,0.3-1,0.7-1,1.5c0,1.4,1.2,2.3,2.8,2.3c1.3,0,2.5-0.7,2.5-1.9c0-0.9-0.7-1.3-1.4-1.7H16z"/><path fill="#39A139" d="M13.9,6.7c1.3,0,2.5,0.7,2.5,1.9c0,0.9-0.7,1.3-1.4,1.7c-2.3,1.4-2.3,3.1,0,4.5c0.7,0.4,1.4,0.8,1.4,1.7c0,1.2-1.2,1.9-2.5,1.9c-1.6,0-2.8-0.9-2.8-2.3c0-0.8,0.5-1.2,1-1.5c-1.8-1.1-1.8-2.7,0-3.8c-0.5-0.3-1-0.7-1-1.5C11.1,7.6,12.3,6.7,13.9,6.7z"/></svg>;
-const IconDocker = ({ className = "h-12 w-12" }) => <svg className={className} viewBox="0 0 24 24"><path fill="#2496ED" d="M21.93,12.2a4.44,4.44,0,0,0-2.7-4,1.42,1.42,0,0,0-1.1-.1A6.73,6.73,0,0,0,12.5,2.4,6.7,6.7,0,0,0,2.4,9.5a6.7,6.7,0,0,0,.6,3L2.3,13a1.42,1.42,0,0,0-.4,1,1.4,1.4,0,0,0,1.5,1.4H4v.1h.1V17H4v.1h.1v.1h.1v.1H4v.1h.1v.1H4v.1h.1v.1H4v.1h.1v.1H4v.1h.1v.1H4v.1h.1v.1H4v.1h.1v.1H4v.1h.1v.1H4v.1h.1v.1H4v.1h.1v.1H4v.1h.1v.1H4v.1h.1v.1H4v.1h.1v.1H4v.1h.1v.1H4v.1h.1v.1H4v.1h.1v.1H4v.1h.1v.1H4v.1h.1v.1H4v.1h.1v.1H4v.1h.1v.1H4v.1h.1l.1.1v.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.1l.1.1h.-2.4a3.84,3.84,0,0,0-3.1-2.9,1.42,1.42,0,0,0-1.4.6,4.44,4.44,0,0,0-4,2.7A4.44,4.44,0,0,0,12.5,21.9a1.42,1.42,0,0,0,.6,1.4,3.84,3.84,0,0,0,2.9,3.1h2.5a3.84,3.84,0,0,0,3.1-2.9,1.42,1.42,0,0,0-.6-1.4,4.44,4.44,0,0,0-2.7-4Z"/></svg>;
+const IconDocker = ({ className = "h-12 w-12" }) => (
+  <svg className={className} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <g fill="#2496ED">
+      <rect x="3" y="10" width="3" height="3" rx="0.4" />
+      <rect x="7" y="10" width="3" height="3" rx="0.4" />
+      <rect x="11" y="10" width="3" height="3" rx="0.4" />
+      <rect x="7" y="6.5" width="3" height="3" rx="0.4" />
+      <rect x="11" y="6.5" width="3" height="3" rx="0.4" />
+      <path d="M2 14h14.5c1.3 0 2.2-.6 2.8-1.7.6.1 1.3 0 1.9-.4-.4-.8-1-1.2-1.7-1.3 0-1-.5-1.8-1.1-2.3-.5.9-.4 1.7 0 2.4H2.6c0 3.7 2.6 6 6.2 6 4 0 6.6-1.9 7.7-4.6" />
+    </g>
+  </svg>
+);
 const IconAws = ({ className = "h-12 w-12" }) => (
   <svg className={className} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M11.66 16.14c-1.39 0-2.43-.28-3.13-.84a2.91 2.91 0 0 1-1.04-2.3c0-.98.37-1.74 1.12-2.28 1.05-.75 2.53-.75 4.41-.75h.69v-.53c0-.57-.06-.97-.19-1.21-.2-.36-.61-.54-1.22-.54-.6 0-.96.15-1.1.44-.1.21-.15.52-.16.94l-2.01-.19c.1-1.01.44-1.76 1.05-2.24A4.1 4.1 0 0 1 12.16 6c1.32 0 2.29.32 2.91.95.62.63.93 1.55.93 2.76v5.82h-1.81v-1.12c-.52.88-1.41 1.33-2.67 1.33h.14zm.44-1.63c.69 0 1.2-.2 1.52-.61a2.31 2.31 0 0 0 .5-1.57v-.53h-.62c-1.26 0-2.13.06-2.59.18-.46.12-.8.32-1.01.6-.21.28-.32.61-.32.98 0 .43.14.77.42 1.01.28.24.65.36 1.1.36v-.42zM12 0C5.372 0 0 5.372 0 12c0 1.38.232 2.704.661 3.94l1.396-.465A10.457 10.457 0 0 1 1.5 12c0-5.799 4.701-10.5 10.5-10.5S22.5 6.201 22.5 12c0 1.11-.173 2.179-.494 3.183l1.439.421A11.944 11.944 0 0 0 24 12c0-6.628-5.372-12-12-12z" fill="#232F3E"/>
@@ -147,17 +158,22 @@ export const SOCIAL_LINKS: SocialLink[] = [
   { name: 'WhatsApp', href: 'https://wa.me/916301655968', icon: IconWhatsapp },
 ];
 
-export const PROFILE_IMAGE_URL = "/profile.jpg";
-export const HERO_IMAGE_URL = "/profile.png";
+export const PROFILE_IMAGE_URL = "/profile_about.webp";
+export const HERO_IMAGE_URL = "/profile.webp";
 export const LOCKSCREEN_IMAGE_URL = "/lockscreen_laptop.png";
-export const ABOUT_IMAGE_URL = "/profile.jpg";
+export const ABOUT_IMAGE_URL = "/profile_about.webp";
+
+// Direct contact links shown in the Contact section
+export const WHATSAPP_URL = "https://wa.me/916301655968?text=Hi%20Mohammed%2C%20I%20found%20your%20portfolio%20and%20would%20like%20to%20discuss%20a%20project.";
+export const LINKEDIN_URL = "https://www.linkedin.com/in/mohammed-ahadullah-962951200";
+export const CONTACT_EMAIL = "ahad53344@gmail.com";
 
 // --- CONTENT - EDIT THIS SECTION ---
 
 export const HERO_CONTENT = {
     name: "Mohammed Ahadullah",
-    title: "Software Engineer",
-    subtitle: "Crafting high-performance, scalable web solutions with a focus on user experience and architectural excellence. Specializing in modern full-stack development."
+    title: "Full Stack Developer",
+    subtitle: "I build fast, easy-to-use websites with online ordering and booking for restaurants, bakeries and local businesses, from the first draft to launch."
 }
 
 export const ABOUT_CONTENT = {
@@ -171,8 +187,8 @@ export const EXPERIENCE_CONTENT: ExperienceItem[] = [
     company: 'Self Employed · Freelance',
     duration: 'Nov 2025 – Present',
     description: [
-      'Building personal and freelance web projects using React.js and Node.js while actively seeking a full-time role.',
-      'Enhancing open-source contributions and deepening AWS and system design knowledge.',
+      'Building websites with online ordering, booking and e-commerce for small businesses using React.js and Node.js.',
+      'Available for freelance projects: from a quick site refresh to a complete custom web app.',
       'Designing and building a full-stack web application for a US-based client, using React.js on the frontend and Node.js/Express on the backend — including UI development, REST API design, database architecture, and production deployment.',
       'Owning the project end-to-end as an independent contractor, from feature scoping through implementation, testing, and deployment.'
     ],
@@ -250,8 +266,15 @@ export const PROJECTS_CONTENT: ProjectItem[] = [
         description: 'A modern, responsive bakery website featuring a delightful product gallery, seamless online ordering system, and an engaging user interface designed to capture the warmth of handcrafted pastries.',
         technologies: ['React', 'Tailwind CSS', 'Framer Motion', 'Vercel'],
         imageUrl: 'https://images.unsplash.com/photo-1612203985729-70726954388c?q=80&w=1000&auto=format&fit=crop',
-        liveUrl: 'https://naufel-bakers-website.vercel.app/',
+        liveUrl: 'https://naufel-bakers.vercel.app/',
         repoUrl: 'https://github.com/ahad5333/Naufel-Bakers',
+      },
+      {
+        title: 'Habibi Halal Express',
+        description: 'An online ordering website for a Mediterranean street-food restaurant, so customers can browse the menu and order from their phone or computer.',
+        technologies: ['React', 'Node.js', 'Online Ordering'],
+        imageUrl: 'https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=1000&auto=format&fit=crop',
+        liveUrl: 'https://habibihe.com',
       },
       {
         title: 'House Price Prediction System',
@@ -278,7 +301,7 @@ export const PROJECTS_CONTENT: ProjectItem[] = [
         title: 'AI Summarizer(Personal Chat Bot)',
         description: 'An application leveraging AI to provide concise summaries of long articles or text, built with a modern React frontend.',
         technologies: ['React', 'TypeScript', 'Gemini API', 'Tailwind CSS'],
-        imageUrl: '/ai_summarizer_3d.jpg',
+        imageUrl: '/ai_summarizer_3d.webp',
         repoUrl: 'https://github.com/ahad5333/personal-chat-bot',
       },
       {
@@ -299,7 +322,7 @@ export const PROJECTS_CONTENT: ProjectItem[] = [
         title: 'VociAi',
         description: 'An AI-powered application that transforms text into high-quality voice audio, utilizing modern web technologies for a seamless user experience.',
         technologies: ['TypeScript', 'React', 'AI Audio API', 'Tailwind CSS'],
-        imageUrl: '/vociai_3d.jpg',
+        imageUrl: '/vociai_3d.webp',
         repoUrl: 'https://github.com/ahad5333/VociAi',
       },
       {
@@ -313,7 +336,7 @@ export const PROJECTS_CONTENT: ProjectItem[] = [
         title: 'Credit Card Fraud Detection',
         description: 'A machine learning system designed to detect fraudulent credit card transactions using classification algorithms to identify suspicious patterns in imbalanced datasets.',
         technologies: ['Python', 'Scikit-Learn', 'Pandas', 'Machine Learning'],
-        imageUrl: '/fraud_detection_3d.jpg',
+        imageUrl: '/fraud_detection_3d.webp',
         repoUrl: 'https://github.com/ahad5333/Credit-Card-Fraud-Detection-Machine-Learning-Project',
       },
       {

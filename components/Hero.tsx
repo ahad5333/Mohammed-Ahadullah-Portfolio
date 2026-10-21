@@ -10,10 +10,10 @@ const Hero: React.FC = () => {
   const [isDeleting, setIsDeleting] = useState(false);
 
   const roles = [
+    "Online Ordering & Booking Sites",
     "Full Stack Developer",
-    "Software Engineer",
-    "Cloud Solutions Architect",
-    "AI Integration Specialist"
+    "Shopify & E-commerce Stores",
+    "Custom Web Apps"
   ];
 
   // Auto-typing effect

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { SOCIAL_LINKS } from '../constants';
-import { Mail, MapPin, Send, MessageSquare, CheckCircle, ArrowRight } from 'lucide-react';
+import { SOCIAL_LINKS, WHATSAPP_URL, LINKEDIN_URL, CONTACT_EMAIL } from '../constants';
+import { Mail, MapPin, Send, MessageSquare, MessageCircle, Linkedin, CheckCircle, ArrowRight } from 'lucide-react';
 import TiltCard from './TiltCard';
 
 const Contact: React.FC = () => {
@@ -24,11 +24,14 @@ const Contact: React.FC = () => {
     if (!formData.name || !formData.email || !formData.message) return;
     
     setIsSubmitting(true);
-    // Simulate sending message (1.5 seconds)
+    // There is no backend, so the form opens the visitor's email app with the message filled in.
+    const subject = formData.subject || 'Project enquiry from your portfolio';
+    const body = `${formData.message}\n\nFrom: ${formData.name}\nReply to: ${formData.email}`;
+    window.location.href = `mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
     setTimeout(() => {
       setIsSubmitting(false);
       setIsSubmitted(true);
-    }, 1500);
+    }, 600);
   };
 
   const handleReset = () => {
@@ -90,7 +93,37 @@ const Contact: React.FC = () => {
               </div>
             </a>
 
-            <a 
+            <a
+              href={WHATSAPP_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-4 group p-3 -m-3 rounded-3xl hover:bg-slate-100/50 dark:hover:bg-slate-900/40 transition-colors"
+            >
+              <div className="p-4 rounded-2xl bg-slate-100 dark:bg-slate-900 group-hover:bg-accent/10 transition-colors border border-slate-200/20 dark:border-slate-800/20">
+                <MessageCircle className="w-6 h-6 text-accent" />
+              </div>
+              <div>
+                <p className="text-xs font-bold text-slate-400 uppercase tracking-widest">WhatsApp (fastest reply)</p>
+                <p className="text-slate-900 dark:text-white font-semibold">Chat with me on WhatsApp</p>
+              </div>
+            </a>
+
+            <a
+              href={LINKEDIN_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-4 group p-3 -m-3 rounded-3xl hover:bg-slate-100/50 dark:hover:bg-slate-900/40 transition-colors"
+            >
+              <div className="p-4 rounded-2xl bg-slate-100 dark:bg-slate-900 group-hover:bg-accent/10 transition-colors border border-slate-200/20 dark:border-slate-800/20">
+                <Linkedin className="w-6 h-6 text-accent" />
+              </div>
+              <div>
+                <p className="text-xs font-bold text-slate-400 uppercase tracking-widest">LinkedIn</p>
+                <p className="text-slate-900 dark:text-white font-semibold">Connect on LinkedIn</p>
+              </div>
+            </a>
+
+            <a
               href="https://www.google.com/maps/search/?api=1&query=Hyderabad,+India"
               target="_blank"
               rel="noopener noreferrer"
@@ -147,9 +180,9 @@ const Contact: React.FC = () => {
                     <CheckCircle className="w-12 h-12" />
                   </div>
                   <div className="space-y-2">
-                    <h4 className="text-2xl font-display font-bold text-slate-900 dark:text-white">Message Sent!</h4>
+                    <h4 className="text-2xl font-display font-bold text-slate-900 dark:text-white">Almost done!</h4>
                     <p className="text-slate-600 dark:text-slate-400 text-sm max-w-sm">
-                      Thank you, <span className="font-bold text-slate-900 dark:text-white">{formData.name}</span>! Your message was delivered successfully. I will get back to you shortly.
+                      Thank you, <span className="font-bold text-slate-900 dark:text-white">{formData.name}</span>! Your email app should now open with your message ready. Just press <strong>Send</strong>. If nothing opened, message me on WhatsApp or email {CONTACT_EMAIL} directly.
                     </p>
                   </div>
                   <button 

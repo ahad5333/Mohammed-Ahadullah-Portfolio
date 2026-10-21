@@ -12,7 +12,9 @@ import LockScreen from './components/LockScreen';
 import Testimonials from './components/Testimonials';
 
 const App: React.FC = () => {
-  const [isUnlocked, setIsUnlocked] = useState(false);
+  // The lock screen is skipped by default so visitors see the portfolio straight away.
+  // Set the initial value back to false to bring the lock screen back.
+  const [isUnlocked, setIsUnlocked] = useState(true);
   const [theme, setTheme] = useState(() => {
     const savedTheme = localStorage.getItem('theme');
     if (savedTheme) return savedTheme;
